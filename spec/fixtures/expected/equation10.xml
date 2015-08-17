@@ -330,6 +330,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0063</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -339,6 +340,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0062</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -347,6 +349,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0061</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -354,6 +357,7 @@
         <char>
           <typeface>11</typeface>
           <mt_code_value>0x222A</mt_code_value>
+          <options>4</options>
           <font_position>85</font_position>
         </char>
         <end/>

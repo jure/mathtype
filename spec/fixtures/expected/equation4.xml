@@ -329,11 +329,13 @@
           <char>
             <typeface>8</typeface>
             <mt_code_value>0x0032</mt_code_value>
+            <options>0</options>
             <variation>mathmode</variation>
           </char>
           <char>
             <typeface>8</typeface>
             <mt_code_value>0x0037</mt_code_value>
+            <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
@@ -344,6 +346,7 @@
           <char>
             <typeface>8</typeface>
             <mt_code_value>0x0033</mt_code_value>
+            <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>

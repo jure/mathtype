@@ -327,15 +327,18 @@
           <char>
             <typeface>6</typeface>
             <mt_code_value>0x2212</mt_code_value>
+            <options>4</options>
             <font_position>45</font_position>
           </char>
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0062</mt_code_value>
+            <options>0</options>
           </char>
           <char>
             <typeface>6</typeface>
             <mt_code_value>0x00B1</mt_code_value>
+            <options>4</options>
             <font_position>177</font_position>
           </char>
           <tmpl>
@@ -347,6 +350,7 @@
               <char>
                 <typeface>3</typeface>
                 <mt_code_value>0x0062</mt_code_value>
+                <options>0</options>
               </char>
               <tmpl>
                 <selector>tmSUP</selector>
@@ -360,6 +364,7 @@
                   <char>
                     <typeface>8</typeface>
                     <mt_code_value>0x0032</mt_code_value>
+                    <options>0</options>
                     <variation>mathmode</variation>
                   </char>
                   <end/>
@@ -370,20 +375,24 @@
               <char>
                 <typeface>6</typeface>
                 <mt_code_value>0x2212</mt_code_value>
+                <options>4</options>
                 <font_position>45</font_position>
               </char>
               <char>
                 <typeface>8</typeface>
                 <mt_code_value>0x0034</mt_code_value>
+                <options>0</options>
                 <variation>mathmode</variation>
               </char>
               <char>
                 <typeface>3</typeface>
                 <mt_code_value>0x0061</mt_code_value>
+                <options>0</options>
               </char>
               <char>
                 <typeface>3</typeface>
                 <mt_code_value>0x0063</mt_code_value>
+                <options>0</options>
               </char>
               <end/>
             </slot>
@@ -401,11 +410,13 @@
           <char>
             <typeface>8</typeface>
             <mt_code_value>0x0032</mt_code_value>
+            <options>0</options>
             <variation>mathmode</variation>
           </char>
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0061</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>

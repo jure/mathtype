@@ -322,23 +322,28 @@
       <char>
         <typeface>2</typeface>
         <mt_code_value>0x0028</mt_code_value>
+        <options>0</options>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0061</mt_code_value>
+        <options>0</options>
       </char>
       <char>
         <typeface>6</typeface>
         <mt_code_value>0x002B</mt_code_value>
+        <options>4</options>
         <font_position>43</font_position>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0062</mt_code_value>
+        <options>0</options>
       </char>
       <char>
         <typeface>2</typeface>
         <mt_code_value>0x0029</mt_code_value>
+        <options>0</options>
       </char>
       <tmpl>
         <selector>tmSUP</selector>
@@ -352,6 +357,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0063</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -361,28 +367,34 @@
       <char>
         <typeface>6</typeface>
         <mt_code_value>0x002B</mt_code_value>
+        <options>4</options>
         <font_position>43</font_position>
       </char>
       <char>
         <typeface>2</typeface>
         <mt_code_value>0x005B</mt_code_value>
+        <options>0</options>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0064</mt_code_value>
+        <options>0</options>
       </char>
       <char>
         <typeface>6</typeface>
         <mt_code_value>0x002B</mt_code_value>
+        <options>4</options>
         <font_position>43</font_position>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0066</mt_code_value>
+        <options>0</options>
       </char>
       <char>
         <typeface>2</typeface>
         <mt_code_value>0x005D</mt_code_value>
+        <options>0</options>
       </char>
       <tmpl>
         <selector>tmSUP</selector>
@@ -396,6 +408,7 @@
           <char>
             <typeface>8</typeface>
             <mt_code_value>0x0034</mt_code_value>
+            <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
@@ -406,6 +419,7 @@
       <char>
         <typeface>6</typeface>
         <mt_code_value>0x002B</mt_code_value>
+        <options>4</options>
         <font_position>43</font_position>
       </char>
       <tmpl>
@@ -418,6 +432,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0062</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -426,6 +441,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0061</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -435,10 +451,12 @@
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0063</mt_code_value>
+        <options>0</options>
       </char>
       <char>
         <typeface>6</typeface>
         <mt_code_value>0x002B</mt_code_value>
+        <options>4</options>
         <font_position>43</font_position>
       </char>
       <tmpl>
@@ -451,6 +469,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0065</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -459,6 +478,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0064</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -468,10 +488,12 @@
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0066</mt_code_value>
+        <options>0</options>
       </char>
       <char>
         <typeface>6</typeface>
         <mt_code_value>0x002B</mt_code_value>
+        <options>4</options>
         <font_position>43</font_position>
       </char>
       <tmpl>
@@ -484,25 +506,30 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0067</mt_code_value>
+            <options>0</options>
           </char>
           <char>
             <typeface>6</typeface>
             <mt_code_value>0x2212</mt_code_value>
+            <options>4</options>
             <font_position>45</font_position>
           </char>
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0068</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
         <char>
           <typeface>22</typeface>
           <mt_code_value>0x0028</mt_code_value>
+          <options>0</options>
         </char>
         <char>
           <typeface>22</typeface>
           <mt_code_value>0x0029</mt_code_value>
+          <options>0</options>
         </char>
         <end/>
       </tmpl>
@@ -518,6 +545,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0069</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -527,11 +555,13 @@
       <char>
         <typeface>6</typeface>
         <mt_code_value>0x002B</mt_code_value>
+        <options>4</options>
         <font_position>43</font_position>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006A</mt_code_value>
+        <options>0</options>
       </char>
       <tmpl>
         <selector>tmSUB</selector>
@@ -542,6 +572,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x006B</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -554,6 +585,7 @@
       <char>
         <typeface>6</typeface>
         <mt_code_value>0x002B</mt_code_value>
+        <options>4</options>
         <font_position>43</font_position>
       </char>
       <tmpl>
@@ -566,6 +598,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x006C</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -578,10 +611,12 @@
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006D</mt_code_value>
+        <options>0</options>
       </char>
       <char>
         <typeface>6</typeface>
         <mt_code_value>0x002B</mt_code_value>
+        <options>4</options>
         <font_position>43</font_position>
       </char>
       <tmpl>
@@ -597,6 +632,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x006E</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -606,15 +642,18 @@
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006F</mt_code_value>
+        <options>0</options>
       </char>
       <char>
         <typeface>6</typeface>
         <mt_code_value>0x002B</mt_code_value>
+        <options>4</options>
         <font_position>43</font_position>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0070</mt_code_value>
+        <options>0</options>
       </char>
       <tmpl>
         <selector>tmSUP</selector>
@@ -628,6 +667,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0072</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>

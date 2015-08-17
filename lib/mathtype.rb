@@ -13,7 +13,6 @@ module Mathtype
       eq = ole.file.read("Equation Native")[28..-1]
 
       data = Mathtype::Equation.read(eq).snapshot
-
       @builder = Nokogiri::XML::Builder.new do |xml|
         @xml = xml
         xml.root do

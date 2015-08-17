@@ -18,7 +18,8 @@ module Mathtype
   class RecordEmbell < BinData::Record; end
   class RecordChar < BinData::Record
     include Snapshot
-    EXPOSED_IN_SNAPSHOT = %i(nudge typeface mt_code_value font_position variation)
+    EXPOSED_IN_SNAPSHOT = %i(nudge typeface mt_code_value options font_position
+      variation embellishment_list)
 
     endian :little
     int8 :options
@@ -57,10 +58,10 @@ module Mathtype
       uint16 16
     end
 
-    array :embelishment_list,
-        onlyif: lambda { options & OPTIONS["mtefOPT_CHAR_EMBELL"] > 1 },
+    array :embellishment_list,
+        onlyif: lambda { options & OPTIONS["mtefOPT_CHAR_EMBELL"] > 0 },
         read_until: lambda { element.record_type == 0 } do
-      record_embell
+      named_record
     end
 
     def mt_code_value

@@ -322,6 +322,7 @@
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0061</mt_code_value>
+        <options>0</options>
       </char>
       <tmpl>
         <selector>tmARROW</selector>
@@ -338,6 +339,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0061</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -346,6 +348,7 @@
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0062</mt_code_value>
+            <options>0</options>
           </char>
           <end/>
         </slot>
@@ -353,16 +356,19 @@
         <char>
           <typeface>22</typeface>
           <mt_code_value>0x21C0</mt_code_value>
+          <options>0</options>
         </char>
         <char>
           <typeface>22</typeface>
           <mt_code_value>0x21BD</mt_code_value>
+          <options>0</options>
         </char>
         <end/>
       </tmpl>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0063</mt_code_value>
+        <options>0</options>
       </char>
       <end/>
     </slot>
