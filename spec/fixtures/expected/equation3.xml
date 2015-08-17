@@ -1250,125 +1250,125 @@
               <end/>
             </slot>
             <size>
-              <lsize>100</lsize>
-              <dsize>40960</dsize>
+              <lsize>0</lsize>
+              <dsize>5</dsize>
             </size>
-            <end/>
-          </matrix>
-          <slot>
-            <options>0</options>
-            <char>
-              <nudge>
-                <dx>-30</dx>
-                <dy>-160</dy>
-              </nudge>
-              <typeface>8</typeface>
-              <mt_code_value>0x0030</mt_code_value>
-              <options>8</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <full/>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>8</typeface>
-              <mt_code_value>0x0034</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>11</typeface>
-              <mt_code_value>0x22F1</mt_code_value>
-              <options>4</options>
-              <font_position>79</font_position>
-            </char>
-            <end/>
-          </slot>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>8</typeface>
-              <mt_code_value>0x0032</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <size>
-            <lsize>100</lsize>
-            <dsize>40960</dsize>
-          </size>
-          <end/>
-        </slot>
-        <slot>
-          <options>0</options>
-          <char>
-            <typeface>8</typeface>
-            <mt_code_value>0x0030</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <end/>
-        </slot>
-        <full/>
-        <slot>
-          <options>0</options>
-          <char>
-            <typeface>8</typeface>
-            <mt_code_value>0x0033</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <end/>
-        </slot>
-        <slot>
-          <options>0</options>
-          <char>
-            <typeface>3</typeface>
-            <mt_code_value>0x0061</mt_code_value>
-            <options>0</options>
-          </char>
-          <tmpl>
-            <selector>tmSUB</selector>
-            <template_specific_options>0</template_specific_options>
-            <sub/>
             <slot>
               <options>0</options>
               <char>
-                <typeface>3</typeface>
-                <mt_code_value>0x006E</mt_code_value>
+                <nudge>
+                  <dx>-30</dx>
+                  <dy>-160</dy>
+                </nudge>
+                <typeface>8</typeface>
+                <mt_code_value>0x0030</mt_code_value>
+                <options>8</options>
+                <variation>mathmode</variation>
+              </char>
+              <end/>
+            </slot>
+            <full/>
+            <slot>
+              <options>0</options>
+              <char>
+                <typeface>8</typeface>
+                <mt_code_value>0x0034</mt_code_value>
                 <options>0</options>
+                <variation>mathmode</variation>
               </char>
               <end/>
             </slot>
             <slot>
-              <options>1</options>
+              <options>0</options>
+              <char>
+                <typeface>11</typeface>
+                <mt_code_value>0x22F1</mt_code_value>
+                <options>4</options>
+                <font_position>79</font_position>
+              </char>
+              <end/>
+            </slot>
+            <slot>
+              <options>0</options>
+              <char>
+                <typeface>8</typeface>
+                <mt_code_value>0x0032</mt_code_value>
+                <options>0</options>
+                <variation>mathmode</variation>
+              </char>
+              <end/>
+            </slot>
+            <size>
+              <lsize>0</lsize>
+              <dsize>5</dsize>
+            </size>
+            <slot>
+              <options>0</options>
+              <char>
+                <typeface>8</typeface>
+                <mt_code_value>0x0030</mt_code_value>
+                <options>0</options>
+                <variation>mathmode</variation>
+              </char>
+              <end/>
+            </slot>
+            <full/>
+            <slot>
+              <options>0</options>
+              <char>
+                <typeface>8</typeface>
+                <mt_code_value>0x0033</mt_code_value>
+                <options>0</options>
+                <variation>mathmode</variation>
+              </char>
+              <end/>
+            </slot>
+            <slot>
+              <options>0</options>
+              <char>
+                <typeface>3</typeface>
+                <mt_code_value>0x0061</mt_code_value>
+                <options>0</options>
+              </char>
+              <tmpl>
+                <selector>tmSUB</selector>
+                <template_specific_options>0</template_specific_options>
+                <sub/>
+                <slot>
+                  <options>0</options>
+                  <char>
+                    <typeface>3</typeface>
+                    <mt_code_value>0x006E</mt_code_value>
+                    <options>0</options>
+                  </char>
+                  <end/>
+                </slot>
+                <slot>
+                  <options>1</options>
+                </slot>
+                <end/>
+              </tmpl>
+              <end/>
             </slot>
             <end/>
-          </tmpl>
+          </matrix>
           <end/>
         </slot>
+        <full/>
+        <char>
+          <typeface>22</typeface>
+          <mt_code_value>0x0028</mt_code_value>
+          <options>0</options>
+        </char>
+        <char>
+          <typeface>22</typeface>
+          <mt_code_value>0x0029</mt_code_value>
+          <options>0</options>
+        </char>
         <end/>
       </tmpl>
       <end/>
     </slot>
-    <full/>
-    <char>
-      <typeface>22</typeface>
-      <mt_code_value>0x0028</mt_code_value>
-      <options>0</options>
-    </char>
-    <char>
-      <typeface>22</typeface>
-      <mt_code_value>0x0029</mt_code_value>
-      <options>0</options>
-    </char>
     <end/>
   </mtef>
 </root>

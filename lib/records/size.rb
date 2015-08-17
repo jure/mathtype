@@ -1,3 +1,5 @@
+require_relative "snapshot"
+
 # SIZE record (9):
 # Consists of one of the following cases:
 
@@ -23,22 +25,46 @@
 
 module Mathtype
   class RecordSize < BinData::Record
+    include Snapshot
+    EXPOSED_IN_SNAPSHOT = %i(lsize dsize point_size)
+
     endian :little
-    int8 :lsize
+    int8 :_size_select
 
-    uint16 :point_size, onlyif: lambda { lsize == 101 }
+    uint16 :_point_size, onlyif: lambda { _size_select == 101 }
+    uint8 :_lsize_large_delta, onlyif: lambda { _size_select == 100 }
 
-    dsize_choice = lambda do
-      if lsize == 100
-        100
-      elsif lsize != 100 && lsize != 101
-        0
+    uint8 :_dsize, onlyif: lambda { _size_select != 100 && _size_select != 101 }
+    uint16 :_dsize_large, onlyif: lambda { _size_select == 100 }
+
+    def dsize
+      case _size_select
+      when 100
+        if _dsize_large > 255
+          (_dsize_large - (256 << 8)) / 32
+        else
+          _dsize_large / 32
+        end
+      when 101
+        nil
+      else
+        (_dsize - 128) / 32 # in 32nds of a point
       end
     end
 
-    choice :dsize, selection: dsize_choice do
-      uint16 100
-      uint16 0
+    def lsize
+      case _size_select
+      when 100
+        _lsize_large_delta
+      when 101
+        nil
+      else
+        _size_select
+      end
+    end
+
+    def point_size
+      -_point_size if _point_size != 0
     end
   end
 end
