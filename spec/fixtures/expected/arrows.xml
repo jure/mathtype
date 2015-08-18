@@ -418,8 +418,6 @@
           <selector>tmARROW</selector>
           <variation>tvAR_SINGLE</variation>
           <variation>tvAR_RIGHT</variation>
-          <variation>tvAR_TOP</variation>
-          <variation>tvAR_BOTTOM</variation>
           <variation>tvAR_TOPBOTTOM</variation>
           <template_specific_options>0</template_specific_options>
           <sub/>
@@ -553,8 +551,6 @@
           <selector>tmARROW</selector>
           <variation>tvAR_SINGLE</variation>
           <variation>tvAR_LEFT</variation>
-          <variation>tvAR_TOP</variation>
-          <variation>tvAR_BOTTOM</variation>
           <variation>tvAR_TOPBOTTOM</variation>
           <template_specific_options>0</template_specific_options>
           <sub/>
@@ -693,8 +689,6 @@
           <variation>tvAR_SINGLE</variation>
           <variation>tvAR_LEFT</variation>
           <variation>tvAR_RIGHT</variation>
-          <variation>tvAR_TOP</variation>
-          <variation>tvAR_BOTTOM</variation>
           <variation>tvAR_TOPBOTTOM</variation>
           <template_specific_options>0</template_specific_options>
           <sub/>
@@ -838,8 +832,6 @@
           <selector>tmARROW</selector>
           <variation>tvAR_SINGLE</variation>
           <variation>tvAR_DOUBLE</variation>
-          <variation>tvAR_TOP</variation>
-          <variation>tvAR_BOTTOM</variation>
           <variation>tvAR_TOPBOTTOM</variation>
           <template_specific_options>0</template_specific_options>
           <sub/>
@@ -993,8 +985,6 @@
           <variation>tvAR_SINGLE</variation>
           <variation>tvAR_DOUBLE</variation>
           <variation>tvAR_LOS</variation>
-          <variation>tvAR_TOP</variation>
-          <variation>tvAR_BOTTOM</variation>
           <variation>tvAR_TOPBOTTOM</variation>
           <template_specific_options>0</template_specific_options>
           <sub/>
@@ -1146,8 +1136,6 @@
           <variation>tvAR_SINGLE</variation>
           <variation>tvAR_DOUBLE</variation>
           <variation>tvAR_SOL</variation>
-          <variation>tvAR_TOP</variation>
-          <variation>tvAR_BOTTOM</variation>
           <variation>tvAR_TOPBOTTOM</variation>
           <template_specific_options>0</template_specific_options>
           <sub/>
@@ -1296,8 +1284,6 @@
           <selector>tmARROW</selector>
           <variation>tvAR_SINGLE</variation>
           <variation>tvAR_HARPOON</variation>
-          <variation>tvAR_TOP</variation>
-          <variation>tvAR_BOTTOM</variation>
           <variation>tvAR_TOPBOTTOM</variation>
           <template_specific_options>0</template_specific_options>
           <sub/>
