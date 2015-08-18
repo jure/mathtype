@@ -313,10 +313,14 @@ module Mathtype
           0x0000 => "tvAR_RIGHT", # if single, arrow points right
         },
         0x0002 => "tvAR_HARPOON", # harpoon
-        0x0004 => "tvAR_TOP", # top slot is present
-        0x0008 => "tvAR_BOTTOM", # bottom slot is present
-        # Added combinations and hidden options
-        0x000c => "tvAR_TOPBOTTOM", # both slots
+        0x0004 => { # top slot is present
+          0x0008 => "tvAR_TOPBOTTOM", # both slots are present
+          0x0004 => "tvAR_TOP"
+        },
+        0x0008 => { # bottom slot is present
+          0x0004 => "tvAR_TOPBOTTOM", # both slots are present
+          0x0008 => "tvAR_BOTTOM"
+        }
       },
 
       # Integrals (see Limit Variations):
@@ -438,7 +442,7 @@ module Mathtype
         else
           value
         end
-      end
+      end.uniq
     end
 
     def selector
