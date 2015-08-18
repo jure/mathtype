@@ -1,3 +1,5 @@
+require_relative "snapshot"
+
 # PILE record (4):
 
 # Consists of:
@@ -12,17 +14,28 @@
 
 module Mathtype
   class RecordPile < BinData::Record
+    include Snapshot
+    EXPOSED_IN_SNAPSHOT = %i(options halign valign object_list)
+
     int8 :options
 
     nudge :nudge, onlyif: lambda { options & OPTIONS["mtefOPT_NUDGE"] > 0 }
 
-    int8 :halign
-    int8 :valign
+    int8 :_halign
+    int8 :_valign
 
     record_ruler :ruler, onlyif: lambda { options & OPTIONS["mtefOPT_LP_RULER"] > 0 }
 
     array :object_list, read_until: lambda { element.record_type == 0 } do
       named_record
+    end
+
+    def halign
+      HALIGN[_halign]
+    end
+
+    def valign
+      VALIGN[_valign]
     end
   end
 end

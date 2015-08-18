@@ -620,9 +620,9 @@
           <options>0</options>
           <matrix>
             <options>0</options>
-            <valign>1</valign>
-            <h_just>1</h_just>
-            <v_just>1</v_just>
+            <valign>center_baseline</valign>
+            <h_just>left</h_just>
+            <v_just>center_baseline</v_just>
             <rows>3</rows>
             <cols>3</cols>
             <row_parts>0</row_parts>
@@ -844,9 +844,9 @@
           <options>0</options>
           <matrix>
             <options>0</options>
-            <valign>1</valign>
-            <h_just>1</h_just>
-            <v_just>1</v_just>
+            <valign>center_baseline</valign>
+            <h_just>left</h_just>
+            <v_just>center_baseline</v_just>
             <rows>3</rows>
             <cols>3</cols>
             <row_parts>0</row_parts>
@@ -1197,9 +1197,9 @@
           <options>0</options>
           <matrix>
             <options>0</options>
-            <valign>1</valign>
-            <h_just>1</h_just>
-            <v_just>1</v_just>
+            <valign>center_baseline</valign>
+            <h_just>left</h_just>
+            <v_just>center_baseline</v_just>
             <rows>3</rows>
             <cols>3</cols>
             <row_parts>0</row_parts>

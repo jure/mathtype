@@ -64,6 +64,22 @@ module Mathtype
     "mtefCOLOR_NAME" => 0x04,             # color has a name, else no name
   }
 
+  HALIGN = {
+    1 => "left",
+    2 => "center",
+    3 => "right",
+    4 => "al", # relational
+    5 => "dec" # decimal
+  }
+
+  VALIGN = {
+    0 => "top_baseline",
+    1 => "center_baseline",
+    2 => "bottom_baseline",
+    3 => "center", # vertical centering
+    4 => "axis" # math axis (center of +,-, brace points, etc.)
+  }
+
   ## Payload is the most important class to understand.
   ## This abstraction allows recursive formats.
   ## eg. lists can contain lists can contain lists.

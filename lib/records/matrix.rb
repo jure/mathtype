@@ -1,12 +1,19 @@
-# PILE record (4):
-# Consists of:
-# record type (4)
+require_relative "snapshot"
+
+# MATRIX record (5):
+# record type (5)
 # options
 # [nudge] if mtefOPT_NUDGE is set
-# [halign] horizontal alignment
-# [valign] vertical alignment
-# [[RULER record]] if mtefOPT_LP_RULER is set
-# [object list] list of lines contained by the pile
+# [valign] vertical alignment of matrix within container
+# [h_just] horizontal alignment within columns
+# [v_just] vertical alignment within columns
+# [rows] number of rows
+# [cols] number of columns
+# [row_parts] row partition line types (see below)
+# [col_parts] column partition line types (see below)
+# [object list] list of lines, one for each element of the matrix, in order from
+# left-to-right and top-to-bottom
+# The values for valign, h_just, and v_just are described in PILE above.
 
 # The row partition line type list consists of two-bit values for each possible
 # partition line (one more than the number of rows), rounded out to the nearest
@@ -16,13 +23,16 @@
 
 module Mathtype
   class RecordMatrix < BinData::Record
+    include Snapshot
+    EXPOSED_IN_SNAPSHOT = %i(options nudge valign h_just v_just rows cols
+      row_parts col_parts object_list)
     int8 :options
 
     nudge :nudge, onlyif: lambda { options & OPTIONS["mtefOPT_NUDGE"] > 0 }
 
-    int8 :valign
-    int8 :h_just
-    int8 :v_just
+    int8 :_valign
+    int8 :_h_just
+    int8 :_v_just
     int8 :rows
     int8 :cols
 
@@ -36,6 +46,18 @@ module Mathtype
 
     array :object_list, read_until: lambda { element.record_type == 0 } do
       named_record
+    end
+
+    def valign
+      VALIGN[_valign]
+    end
+
+    def h_just
+      HALIGN[_h_just]
+    end
+
+    def v_just
+      VALIGN[_v_just]
     end
   end
 end

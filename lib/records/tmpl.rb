@@ -412,7 +412,6 @@ module Mathtype
 
     def variation
       variation = (_variation_first_byte & 0x7F) | (_variation_second_byte << 8)
-
       variations = VARIATIONS.select do |selector, _|
         selector === _selector
       end.values.reduce(Hash.new, :merge)
