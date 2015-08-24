@@ -321,7 +321,6 @@
       <options>0</options>
       <tmpl>
         <selector>tmROOT</selector>
-        <variation>tvROOT_SQ</variation>
         <variation>tvROOT_NTH</variation>
         <template_specific_options>0</template_specific_options>
         <slot>

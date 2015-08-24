@@ -80,10 +80,10 @@ module Mathtype
 
     def variation
       case typeface
-      when 8
-        "mathmode"
-      when 1
+      when 1, 9, 10
         "textmode"
+      else
+        "mathmode"
       end
     end
   end

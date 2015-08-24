@@ -16,7 +16,7 @@
     </encoding_def>
     <font_def>
       <enc_def_index>5</enc_def_index>
-      <font_name>Cambria</font_name>
+      <font_name>Times New Roman</font_name>
     </font_def>
     <font_def>
       <enc_def_index>3</enc_def_index>
@@ -24,7 +24,7 @@
     </font_def>
     <font_def>
       <enc_def_index>5</enc_def_index>
-      <font_name>Courier</font_name>
+      <font_name>Courier New</font_name>
     </font_def>
     <font_def>
       <enc_def_index>4</enc_def_index>
@@ -323,46 +323,35 @@
       <valign>center_baseline</valign>
       <slot>
         <options>0</options>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation></variation>
-          <variation>tvAR_TOP</variation>
+          <selector>tmPAREN</selector>
+          <variation>tvFENCE_L</variation>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0061</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>1</options>
-          </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
+            <mt_code_value>0x0028</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x0029</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -370,21 +359,11 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation></variation>
-          <variation>tvAR_BOTTOM</variation>
+          <selector>tmBRACK</selector>
+          <variation>tvFENCE_L</variation>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>1</options>
-          </slot>
           <slot>
             <options>0</options>
             <char>
@@ -395,21 +374,20 @@
             </char>
             <end/>
           </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
+            <mt_code_value>0x005B</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x005D</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -417,28 +395,11 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation></variation>
-          <variation>tvAR_TOPBOTTOM</variation>
+          <selector>tmBRACE</selector>
+          <variation>tvFENCE_L</variation>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
           <slot>
             <options>0</options>
             <char>
@@ -449,21 +410,20 @@
             </char>
             <end/>
           </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
+            <mt_code_value>0x007B</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x007D</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0064</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -471,46 +431,35 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation></variation>
-          <variation>tvAR_TOP</variation>
+          <selector>tmANGLE</selector>
+          <variation>tvFENCE_L</variation>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0064</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>1</options>
-          </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0x2329</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x232A</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -518,97 +467,147 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation></variation>
-          <variation>tvAR_BOTTOM</variation>
+          <selector>tmBAR</selector>
+          <variation>tvFENCE_L</variation>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>1</options>
-          </slot>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0065</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0xEC07</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xEC08</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
         <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmDBAR</selector>
+          <variation>tvFENCE_L</variation>
+          <variation>tvFENCE_R</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0066</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xEC09</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xEC0A</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmFLOOR</selector>
+          <variation>tvFENCE_L</variation>
+          <variation>tvFENCE_R</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0067</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xF8F0</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xF8FB</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
         <end/>
       </slot>
       <slot>
         <options>0</options>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation></variation>
-          <variation>tvAR_TOPBOTTOM</variation>
+          <selector>tmCEILING</selector>
+          <variation>tvFENCE_L</variation>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0068</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0063</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0xF8EE</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xF8F9</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0064</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -616,23 +615,123 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation></variation>
-          <variation>tvAR_TOP</variation>
+          <selector>tmINTERVAL</selector>
+          <variation>tvINTV_LBRP</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0069</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x005B</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x0029</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmINTERVAL</selector>
+          <variation>tvINTV_LPRB</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x006A</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x0028</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x005D</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmDIRAC</selector>
+          <variation>tvDI_RIGHT</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>1</options>
+          </slot>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x006B</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xEC07</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x232A</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmDIRAC</selector>
+          <variation>tvDI_LEFT</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x006C</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
@@ -641,21 +740,20 @@
           <slot>
             <options>1</options>
           </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2194</mt_code_value>
+            <mt_code_value>0x2329</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xEC07</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -663,46 +761,34 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation></variation>
-          <variation>tvAR_BOTTOM</variation>
+          <selector>tmINTERVAL</selector>
+          <variation>tvINTV_LBLB</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>1</options>
-          </slot>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x006D</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2194</mt_code_value>
+            <mt_code_value>0x005B</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x005B</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -710,156 +796,75 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation></variation>
-          <variation>tvAR_TOPBOTTOM</variation>
+          <selector>tmINTERVAL</selector>
+          <variation>tvINTV_LBLB</variation>
+          <variation>tvINTV_RBRB</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x006E</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0063</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2194</mt_code_value>
+            <mt_code_value>0x005D</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x005D</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0064</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
           <options>4</options>
           <font_position>43</font_position>
-          <variation>mathmode</variation>
-        </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
-        <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_DOUBLE</variation>
-          <variation>tvAR_TOP</variation>
-          <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <slot>
-            <options>1</options>
-          </slot>
-          <full/>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <end/>
-        </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
           <variation>mathmode</variation>
         </char>
         <end/>
       </slot>
       <slot>
         <options>0</options>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_DOUBLE</variation>
-          <variation>tvAR_BOTTOM</variation>
+          <selector>tmINTERVAL</selector>
+          <variation>tvINTV_LBLB</variation>
+          <variation>tvINTV_RBLB</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>1</options>
-          </slot>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x006F</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
+            <mt_code_value>0x005D</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0x005B</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -867,59 +872,35 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_DOUBLE</variation>
-          <variation>tvAR_TOPBOTTOM</variation>
+          <selector>tmOBRACK</selector>
+          <variation>tvFENCE_L</variation>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0070</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0063</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
+            <mt_code_value>0x301A</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0x301B</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0064</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -927,53 +908,28 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_DOUBLE</variation>
-          <variation>tvAR_LOS</variation>
-          <variation>tvAR_TOP</variation>
+          <selector>tmPAREN</selector>
+          <variation>tvFENCE_L</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0072</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>1</options>
-          </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0x0028</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -981,53 +937,28 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_DOUBLE</variation>
-          <variation>tvAR_LOS</variation>
-          <variation>tvAR_BOTTOM</variation>
+          <selector>tmPAREN</selector>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>1</options>
-          </slot>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0073</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0x0029</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -1035,111 +966,148 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_DOUBLE</variation>
-          <variation>tvAR_LOS</variation>
-          <variation>tvAR_TOPBOTTOM</variation>
+          <selector>tmBRACK</selector>
+          <variation>tvFENCE_L</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0074</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0063</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0x005B</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
         <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0064</mt_code_value>
-          <options>0</options>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmBRACK</selector>
+          <variation>tvFENCE_R</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0075</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x005D</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmBRACE</selector>
+          <variation>tvFENCE_L</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0076</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <char>
+              <typeface>6</typeface>
+              <mt_code_value>0x002B</mt_code_value>
+              <options>4</options>
+              <font_position>43</font_position>
+              <variation>mathmode</variation>
+            </char>
+            <tmpl>
+              <selector>tmBRACE</selector>
+              <variation>tvFENCE_R</variation>
+              <template_specific_options>0</template_specific_options>
+              <slot>
+                <options>0</options>
+                <char>
+                  <typeface>3</typeface>
+                  <mt_code_value>0x0078</mt_code_value>
+                  <options>0</options>
+                  <variation>mathmode</variation>
+                </char>
+                <end/>
+              </slot>
+              <char>
+                <typeface>22</typeface>
+                <mt_code_value>0x007D</mt_code_value>
+                <options>0</options>
+                <variation>mathmode</variation>
+              </char>
+              <end/>
+            </tmpl>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x007B</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
         <end/>
       </slot>
       <slot>
         <options>0</options>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_DOUBLE</variation>
-          <variation>tvAR_SOL</variation>
-          <variation>tvAR_TOP</variation>
+          <selector>tmANGLE</selector>
+          <variation>tvFENCE_L</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0079</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>1</options>
-          </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0x2329</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -1147,53 +1115,28 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_DOUBLE</variation>
-          <variation>tvAR_SOL</variation>
-          <variation>tvAR_BOTTOM</variation>
+          <selector>tmANGLE</selector>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>1</options>
-          </slot>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x007A</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0x232A</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -1201,60 +1144,28 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_DOUBLE</variation>
-          <variation>tvAR_SOL</variation>
-          <variation>tvAR_TOPBOTTOM</variation>
+          <selector>tmBAR</selector>
+          <variation>tvFENCE_L</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
               <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
+              <mt_code_value>0x0061</mt_code_value>
               <options>0</options>
               <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0063</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x2192</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x2190</mt_code_value>
+            <mt_code_value>0xEC07</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0064</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -1262,18 +1173,10 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_HARPOON</variation>
-          <variation>tvAR_TOP</variation>
+          <selector>tmBAR</selector>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
             <options>0</options>
             <char>
@@ -1284,30 +1187,14 @@
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>1</options>
-          </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x21C0</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21BD</mt_code_value>
+            <mt_code_value>0xEC08</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -1315,20 +1202,136 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
+        <tmpl>
+          <selector>tmDBAR</selector>
+          <variation>tvFENCE_L</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0061</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xEC09</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
         <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_HARPOON</variation>
-          <variation>tvAR_BOTTOM</variation>
+          <selector>tmDBAR</selector>
+          <variation>tvFENCE_R</variation>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
-            <options>1</options>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0062</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xEC0A</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmOBRACK</selector>
+          <variation>tvFENCE_L</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0061</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x301A</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmOBRACK</selector>
+          <variation>tvFENCE_R</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0062</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x301B</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmDIRAC</selector>
+          <variation>tvDI_LEFT</variation>
+          <variation>tvDI_RIGHT</variation>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0061</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
           </slot>
           <slot>
             <options>0</options>
@@ -1340,42 +1343,51 @@
             </char>
             <end/>
           </slot>
-          <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x21C0</mt_code_value>
+            <mt_code_value>0x2329</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x21BD</mt_code_value>
+            <mt_code_value>0xEC07</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0x232A</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
         <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
         <end/>
       </slot>
       <slot>
         <options>0</options>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_HARPOON</variation>
-          <variation>tvAR_TOPBOTTOM</variation>
+          <selector>tmHBRACE</selector>
+          <variation>tvHB_TOP</variation>
           <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0061</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
           <sub/>
           <slot>
             <options>0</options>
@@ -1387,6 +1399,36 @@
             </char>
             <end/>
           </slot>
+          <full/>
+          <char>
+            <typeface>22</typeface>
+            <mt_code_value>0xFE37</mt_code_value>
+            <options>0</options>
+            <variation>mathmode</variation>
+          </char>
+          <end/>
+        </tmpl>
+        <char>
+          <typeface>6</typeface>
+          <mt_code_value>0x002B</mt_code_value>
+          <options>4</options>
+          <font_position>43</font_position>
+          <variation>mathmode</variation>
+        </char>
+        <tmpl>
+          <selector>tmHBRACE</selector>
+          <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0062</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
+          <sub/>
           <slot>
             <options>0</options>
             <char>
@@ -1400,24 +1442,12 @@
           <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x21C0</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21BD</mt_code_value>
+            <mt_code_value>0xFE38</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0064</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -1425,18 +1455,20 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_LOS</variation>
-          <variation>tvAR_HARPOON</variation>
-          <variation>tvAR_TOP</variation>
+          <selector>tmHBRACK</selector>
+          <variation>tvHB_TOP</variation>
           <template_specific_options>0</template_specific_options>
+          <slot>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0061</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
+          </slot>
           <sub/>
           <slot>
             <options>0</options>
@@ -1448,30 +1480,15 @@
             </char>
             <end/>
           </slot>
-          <slot>
-            <options>1</options>
-          </slot>
           <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x21C0</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21BD</mt_code_value>
+            <mt_code_value>0xEC0D</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
@@ -1479,22 +1496,20 @@
           <font_position>43</font_position>
           <variation>mathmode</variation>
         </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_LOS</variation>
-          <variation>tvAR_HARPOON</variation>
-          <variation>tvAR_BOTTOM</variation>
+          <selector>tmHBRACK</selector>
           <template_specific_options>0</template_specific_options>
-          <sub/>
           <slot>
-            <options>1</options>
+            <options>0</options>
+            <char>
+              <typeface>3</typeface>
+              <mt_code_value>0x0061</mt_code_value>
+              <options>0</options>
+              <variation>mathmode</variation>
+            </char>
+            <end/>
           </slot>
+          <sub/>
           <slot>
             <options>0</options>
             <char>
@@ -1508,251 +1523,12 @@
           <full/>
           <char>
             <typeface>22</typeface>
-            <mt_code_value>0x21C0</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21BD</mt_code_value>
+            <mt_code_value>0xEC0C</mt_code_value>
             <options>0</options>
             <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
-        <char>
-          <typeface>6</typeface>
-          <mt_code_value>0x002B</mt_code_value>
-          <options>4</options>
-          <font_position>43</font_position>
-          <variation>mathmode</variation>
-        </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
-        <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_LOS</variation>
-          <variation>tvAR_HARPOON</variation>
-          <variation>tvAR_TOPBOTTOM</variation>
-          <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0063</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <full/>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21C0</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21BD</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <end/>
-        </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0064</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
-        <char>
-          <typeface>6</typeface>
-          <mt_code_value>0x002B</mt_code_value>
-          <options>4</options>
-          <font_position>43</font_position>
-          <variation>mathmode</variation>
-        </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
-        <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_SOL</variation>
-          <variation>tvAR_HARPOON</variation>
-          <variation>tvAR_TOP</variation>
-          <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <slot>
-            <options>1</options>
-          </slot>
-          <full/>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21C0</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21BD</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <end/>
-        </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
-        <end/>
-      </slot>
-      <slot>
-        <options>0</options>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
-        <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_SOL</variation>
-          <variation>tvAR_HARPOON</variation>
-          <variation>tvAR_BOTTOM</variation>
-          <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>1</options>
-          </slot>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <full/>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21C0</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21BD</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <end/>
-        </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0063</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
-        <char>
-          <typeface>6</typeface>
-          <mt_code_value>0x002B</mt_code_value>
-          <options>4</options>
-          <font_position>43</font_position>
-          <variation>mathmode</variation>
-        </char>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0061</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
-        <tmpl>
-          <selector>tmARROW</selector>
-          <variation>tvAR_SOL</variation>
-          <variation>tvAR_HARPOON</variation>
-          <variation>tvAR_TOPBOTTOM</variation>
-          <template_specific_options>0</template_specific_options>
-          <sub/>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0062</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <slot>
-            <options>0</options>
-            <char>
-              <typeface>3</typeface>
-              <mt_code_value>0x0063</mt_code_value>
-              <options>0</options>
-              <variation>mathmode</variation>
-            </char>
-            <end/>
-          </slot>
-          <full/>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21C0</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <char>
-            <typeface>22</typeface>
-            <mt_code_value>0x21BD</mt_code_value>
-            <options>0</options>
-            <variation>mathmode</variation>
-          </char>
-          <end/>
-        </tmpl>
-        <char>
-          <typeface>3</typeface>
-          <mt_code_value>0x0064</mt_code_value>
-          <options>0</options>
-          <variation>mathmode</variation>
-        </char>
         <end/>
       </slot>
       <end/>

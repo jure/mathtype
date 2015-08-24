@@ -323,12 +323,14 @@
         <typeface>3</typeface>
         <mt_code_value>0x0061</mt_code_value>
         <options>0</options>
+        <variation>mathmode</variation>
       </char>
       <sub/>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0062</mt_code_value>
         <options>0</options>
+        <variation>mathmode</variation>
       </char>
       <size>
         <lsize>4</lsize>
@@ -338,6 +340,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0063</mt_code_value>
         <options>0</options>
+        <variation>mathmode</variation>
       </char>
       <size>
         <lsize>0</lsize>
@@ -347,12 +350,14 @@
         <typeface>3</typeface>
         <mt_code_value>0x0064</mt_code_value>
         <options>0</options>
+        <variation>mathmode</variation>
       </char>
       <sub2/>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0065</mt_code_value>
         <options>0</options>
+        <variation>mathmode</variation>
       </char>
       <size>
         <lsize>0</lsize>
@@ -362,6 +367,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0066</mt_code_value>
         <options>0</options>
+        <variation>mathmode</variation>
       </char>
       <size>
         <lsize>0</lsize>
@@ -371,6 +377,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0067</mt_code_value>
         <options>0</options>
+        <variation>mathmode</variation>
       </char>
       <end/>
     </slot>

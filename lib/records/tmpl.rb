@@ -251,6 +251,13 @@ module Mathtype
       37 => "tmBOX"
     }
 
+
+    # When options overlap in the binary space, ordinary bitmasks
+    # are not the correct tool to use for detection. We use digit
+    # position and presence instead.
+
+    DIGIT_MODE_VARIATIONS = [9]
+
     # Top-level keys are template identifiers, defined in TEMPLATES.
     # Second-level keys are bits for certain variations, negative keys mean
     # that the variation is present if the bit is absent.
@@ -264,20 +271,26 @@ module Mathtype
 
       # Intervals:
       9 => {
-        0x0000 => "tvINTV_LEFT_LP", #  left fence is left parenthesis
-        0x0001 => "tvINTV_LEFT_RP", #  left fence is right parenthesis
-        0x0002 => "tvINTV_LEFT_LB", #  left fence is left bracket
-        0x0003 => "tvINTV_LEFT_RB", #  left fence is right bracket
-        0x0004 => "tvINTV_RIGHT_LP", # right fence is left parenthesis # WARNING: DOCUMENTATION SAYS 0x0000?
-        0x0010 => "tvINTV_RIGHT_RP", # right fence is right parenthesis
-        0x0020 => "tvINTV_RIGHT_LB", # right fence is left bracket
-        0x0030 => "tvINTV_RIGHT_RB", # right fence is right bracket
-        # Added to match MathML translator
-        0x0022 => "tvINTV_LBLB",
-        0x0033 => "tvINTV_RBRB",
-        0x0023 => "tvINTV_RBLB",
-        0x0012 => "tvINTV_LBRP",
-        0x0030 => "tvINTV_LPRB"
+        # 0x0000 => "tvINTV_LEFT_LP", #  left fence is left parenthesis
+        # 0x0001 => "tvINTV_LEFT_RP", #  left fence is right parenthesis
+        # 0x0002 => "tvINTV_LEFT_LB", #  left fence is left bracket
+        # 0x0003 => "tvINTV_LEFT_RB", #  left fence is right bracket
+        # 0x0004 => "tvINTV_RIGHT_LP", # right fence is left parenthesis # WARNING: DOCUMENTATION SAYS 0x0000?
+        # 0x0010 => "tvINTV_RIGHT_RP", # right fence is right parenthesis
+        # 0x0020 => "tvINTV_RIGHT_LB", # right fence is left bracket
+        # 0x0030 => "tvINTV_RIGHT_RB", # right fence is right bracket
+        # Replaced above to match MathML translator
+        0x0002 => {
+          0x0020 => "tvINTV_LBLB", # left bracket, left bracket
+          0x0010 => "tvINTV_LBRP", # left bracket, right parenthesis
+        },
+        0x0003 => {
+          0x0030 => "tvINTV_RBRB", # right bracket, right bracket
+          0x0020 => "tvINTV_RBLB", # right bracket, left bracket
+        },
+        0x0000 => {
+          0x0030 => "tvINTV_LPRB", # left parenthesis, right bracket
+        }
       },
 
       # Radicals (square and nth roots):
@@ -415,34 +428,67 @@ module Mathtype
     end
 
     def variation
-      variation = (_variation_first_byte & 0x7F) | (_variation_second_byte << 8)
-      variations = VARIATIONS.select do |selector, _|
+      @variation = (_variation_first_byte & 0x7F) | (_variation_second_byte << 8)
+      @variations = VARIATIONS.select do |selector, _|
         selector === _selector
       end.values.reduce(Hash.new, :merge)
 
-      process_variations(variation, variations)
+      process_variations
     end
 
-    def process_variations(variation, variations)
-      variations.select do |bit, value|
-        # bit should NOT be active
-        if bit < 0
-          variation & -bit == 0
-        # bit should be active
-        else
-          variation & bit == bit
+    def process_variations
+      @variations.select do |flag, _|
+        if flag < 0 # flag should NOT be active
+          !check_flag(-flag)
+        else # flag should be active
+          check_flag(flag)
         end
-      end.map do |bit, value|
+      end.map do |flag, value|
         case value
         when Hash # Conditional variations
-          result = value.detect do |conditional, value|
-            variation & conditional == conditional
+          result = value.detect do |conditional, _|
+            check_flag(conditional)
           end
           result.last if result
         else
           value
         end
       end.uniq
+    end
+
+    def check_flag(flag)
+      case mode
+      when :bitmask
+        check_bitmask(flag)
+      when :digit
+        check_digit(flag)
+      end
+    end
+
+    def check_bitmask(flag)
+      if flag == 0
+        @variation & 0xf == 0
+      else
+        @variation & flag == flag
+      end
+    end
+
+    # E.g. is 0x3 present in 0x33
+    def check_digit(flag)
+      digits = if flag == 0
+        1
+      else
+        (Math.log(flag+1)/Math.log(16)).ceil # digits in a hex number
+      end
+      mask = (15<<(4*digits-4)) # e.g. 0xf0
+      variation_digit = (@variation & mask) >> (digits * 4 - 4)
+      flag_digit = (flag & mask) >> (digits * 4 - 4)
+      variation_digit == flag_digit
+    end
+
+
+    def mode
+      DIGIT_MODE_VARIATIONS.include?(selector) ? :digit : :bitmask
     end
 
     def selector

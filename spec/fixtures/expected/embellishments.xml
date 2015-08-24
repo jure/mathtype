@@ -323,6 +323,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0061</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>emb1PRIME</embell>
@@ -333,6 +334,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0062</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>emb2PRIME</embell>
@@ -343,6 +345,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0063</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>emb3PRIME</embell>
@@ -353,6 +356,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0064</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embBPRIME</embell>
@@ -363,6 +367,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0065</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embNOT</embell>
@@ -373,6 +378,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0066</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embMBAR</embell>
@@ -383,6 +389,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0067</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embX_BARS</embell>
@@ -393,6 +400,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0068</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embUP_BAR</embell>
@@ -403,6 +411,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0069</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embDOWN_BAR</embell>
@@ -414,11 +423,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006A</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>emb1DOT</embell>
@@ -430,11 +441,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006B</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>emb2DOT</embell>
@@ -446,11 +459,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006C</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>emb3DOT</embell>
@@ -462,11 +477,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006D</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>emb4DOT</embell>
@@ -478,11 +495,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006E</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_1DOT</embell>
@@ -494,11 +513,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006F</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_2DOT</embell>
@@ -510,11 +531,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0070</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_3DOT</embell>
@@ -526,11 +549,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0071</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embFROWN</embell>
@@ -542,11 +567,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0072</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_4DOT</embell>
@@ -558,11 +585,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0073</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embOBAR</embell>
@@ -574,11 +603,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0074</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embTILDE</embell>
@@ -590,11 +621,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0075</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embSMILE</embell>
@@ -606,11 +639,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0076</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embHAT</embell>
@@ -622,11 +657,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0078</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_BAR</embell>
@@ -638,11 +675,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0079</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_TILDE</embell>
@@ -654,11 +693,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x007A</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_FROWN</embell>
@@ -670,11 +711,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0061</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_SMILE</embell>
@@ -686,11 +729,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0062</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embRARROW</embell>
@@ -702,11 +747,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0063</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embLARROW</embell>
@@ -718,11 +765,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0064</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embBARROW</embell>
@@ -734,11 +783,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0065</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embR1ARROW</embell>
@@ -750,11 +801,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0066</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embL1ARROW</embell>
@@ -766,11 +819,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0067</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_RARROW</embell>
@@ -782,11 +837,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0068</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_LARROW</embell>
@@ -798,11 +855,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x0069</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_BARROW</embell>
@@ -814,11 +873,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006A</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_R1ARROW</embell>
@@ -830,11 +891,13 @@
         <mt_code_value>0x2212</mt_code_value>
         <options>4</options>
         <font_position>45</font_position>
+        <variation>mathmode</variation>
       </char>
       <char>
         <typeface>3</typeface>
         <mt_code_value>0x006B</mt_code_value>
         <options>1</options>
+        <variation>mathmode</variation>
         <embell>
           <options>0</options>
           <embell>embU_L1ARROW</embell>

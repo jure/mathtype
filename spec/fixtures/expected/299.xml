@@ -304,18 +304,21 @@
         <options>0</options>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FB</mt_code_value>
+          <mt_code_value>0xEF05</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FB</mt_code_value>
+          <mt_code_value>0xEF05</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FE</mt_code_value>
+          <mt_code_value>0xEF02</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <tmpl>
           <selector>tmLIM</selector>
@@ -340,16 +343,19 @@
               <typeface>2</typeface>
               <mt_code_value>0x006D</mt_code_value>
               <options>2</options>
+              <variation>mathmode</variation>
             </char>
             <char>
               <typeface>2</typeface>
               <mt_code_value>0x0069</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <char>
               <typeface>2</typeface>
               <mt_code_value>0x006E</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
@@ -366,27 +372,32 @@
               <typeface>3</typeface>
               <mt_code_value>0x0077</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <char>
               <typeface>2</typeface>
               <mt_code_value>0x002C</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <char>
               <typeface>3</typeface>
               <mt_code_value>0x0062</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <char>
               <typeface>2</typeface>
               <mt_code_value>0x002C</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <char>
               <typeface>4</typeface>
               <mt_code_value>0x03BE</mt_code_value>
               <options>4</options>
               <font_position>120</font_position>
+              <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
@@ -401,13 +412,15 @@
         <full/>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FB</mt_code_value>
+          <mt_code_value>0xEF05</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FC</mt_code_value>
+          <mt_code_value>0xEF04</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <color>
           <color_def_index>1</color_def_index>
@@ -453,6 +466,7 @@
           <typeface>3</typeface>
           <mt_code_value>0x0077</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <color>
           <color_def_index>0</color_def_index>
@@ -473,6 +487,7 @@
               <typeface>3</typeface>
               <mt_code_value>0x0054</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
@@ -483,17 +498,20 @@
           <typeface>3</typeface>
           <mt_code_value>0x0077</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x002B</mt_code_value>
           <options>4</options>
           <font_position>43</font_position>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>3</typeface>
           <mt_code_value>0x0043</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <tmpl>
           <selector>tmSUMOP</selector>
@@ -517,12 +535,14 @@
               <typeface>3</typeface>
               <mt_code_value>0x0069</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <char>
               <typeface>6</typeface>
               <mt_code_value>0x003D</mt_code_value>
               <options>4</options>
               <font_position>61</font_position>
+              <variation>mathmode</variation>
             </char>
             <char>
               <typeface>8</typeface>
@@ -544,6 +564,7 @@
               <typeface>3</typeface>
               <mt_code_value>0x006C</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
@@ -561,6 +582,7 @@
               <mt_code_value>0x2211</mt_code_value>
               <options>4</options>
               <font_position>229</font_position>
+              <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
@@ -572,6 +594,7 @@
           <mt_code_value>0x03BE</mt_code_value>
           <options>4</options>
           <font_position>120</font_position>
+          <variation>mathmode</variation>
         </char>
         <color>
           <color_def_index>0</color_def_index>
@@ -589,6 +612,7 @@
               <typeface>3</typeface>
               <mt_code_value>0x0069</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
@@ -652,8 +676,9 @@
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FC</mt_code_value>
+          <mt_code_value>0xEF04</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>1</typeface>
@@ -675,18 +700,21 @@
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FC</mt_code_value>
+          <mt_code_value>0xEF04</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FB</mt_code_value>
+          <mt_code_value>0xEF05</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>3</typeface>
           <mt_code_value>0x0079</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <color>
           <color_def_index>0</color_def_index>
@@ -704,6 +732,7 @@
               <typeface>3</typeface>
               <mt_code_value>0x0069</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
@@ -720,6 +749,7 @@
           <typeface>2</typeface>
           <mt_code_value>0x0028</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <color>
           <color_def_index>1</color_def_index>
@@ -728,6 +758,7 @@
           <typeface>3</typeface>
           <mt_code_value>0x0077</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <color>
           <color_def_index>0</color_def_index>
@@ -748,6 +779,7 @@
               <typeface>3</typeface>
               <mt_code_value>0x0054</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
@@ -762,6 +794,7 @@
           <mt_code_value>0x03D5</mt_code_value>
           <options>4</options>
           <font_position>102</font_position>
+          <variation>mathmode</variation>
         </char>
         <tmpl>
           <selector>tmPAREN</selector>
@@ -777,6 +810,7 @@
               <typeface>3</typeface>
               <mt_code_value>0x0078</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <color>
               <color_def_index>0</color_def_index>
@@ -794,6 +828,7 @@
                   <typeface>3</typeface>
                   <mt_code_value>0x0069</mt_code_value>
                   <options>0</options>
+                  <variation>mathmode</variation>
                 </char>
                 <end/>
               </slot>
@@ -812,11 +847,13 @@
             <typeface>22</typeface>
             <mt_code_value>0x0028</mt_code_value>
             <options>0</options>
+            <variation>mathmode</variation>
           </char>
           <char>
             <typeface>22</typeface>
             <mt_code_value>0x0029</mt_code_value>
             <options>0</options>
+            <variation>mathmode</variation>
           </char>
           <end/>
         </tmpl>
@@ -828,11 +865,13 @@
           <mt_code_value>0x002B</mt_code_value>
           <options>4</options>
           <font_position>43</font_position>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>3</typeface>
           <mt_code_value>0x0062</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <color>
           <color_def_index>0</color_def_index>
@@ -841,6 +880,7 @@
           <typeface>2</typeface>
           <mt_code_value>0x0029</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <color>
           <color_def_index>1</color_def_index>
@@ -849,22 +889,26 @@
           <typeface>2</typeface>
           <mt_code_value>0x00A0</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FC</mt_code_value>
+          <mt_code_value>0xEF04</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x2265</mt_code_value>
           <options>4</options>
           <font_position>179</font_position>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FC</mt_code_value>
+          <mt_code_value>0xEF04</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>8</typeface>
@@ -877,12 +921,14 @@
           <mt_code_value>0x2212</mt_code_value>
           <options>4</options>
           <font_position>45</font_position>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>4</typeface>
           <mt_code_value>0x03BE</mt_code_value>
           <options>4</options>
           <font_position>120</font_position>
+          <variation>mathmode</variation>
         </char>
         <color>
           <color_def_index>0</color_def_index>
@@ -900,6 +946,7 @@
               <typeface>3</typeface>
               <mt_code_value>0x0069</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
@@ -921,34 +968,40 @@
         <options>0</options>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FB</mt_code_value>
+          <mt_code_value>0xEF05</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FB</mt_code_value>
+          <mt_code_value>0xEF05</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FB</mt_code_value>
+          <mt_code_value>0xEF05</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FB</mt_code_value>
+          <mt_code_value>0xEF05</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FB</mt_code_value>
+          <mt_code_value>0xEF05</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>4</typeface>
           <mt_code_value>0x03BE</mt_code_value>
           <options>4</options>
           <font_position>120</font_position>
+          <variation>mathmode</variation>
         </char>
         <color>
           <color_def_index>0</color_def_index>
@@ -966,6 +1019,7 @@
               <typeface>3</typeface>
               <mt_code_value>0x0069</mt_code_value>
               <options>0</options>
+              <variation>mathmode</variation>
             </char>
             <end/>
           </slot>
@@ -986,6 +1040,7 @@
           <mt_code_value>0x2265</mt_code_value>
           <options>4</options>
           <font_position>179</font_position>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>8</typeface>
@@ -997,22 +1052,26 @@
           <typeface>2</typeface>
           <mt_code_value>0x002C</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>24</typeface>
-          <mt_code_value>0x110FB</mt_code_value>
+          <mt_code_value>0xEF05</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>6</typeface>
           <mt_code_value>0x2200</mt_code_value>
           <options>4</options>
           <font_position>34</font_position>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>3</typeface>
           <mt_code_value>0x0069</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <end/>
       </slot>

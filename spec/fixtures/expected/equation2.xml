@@ -329,17 +329,20 @@
             <mt_code_value>0x2212</mt_code_value>
             <options>4</options>
             <font_position>45</font_position>
+            <variation>mathmode</variation>
           </char>
           <char>
             <typeface>3</typeface>
             <mt_code_value>0x0062</mt_code_value>
             <options>0</options>
+            <variation>mathmode</variation>
           </char>
           <char>
             <typeface>6</typeface>
             <mt_code_value>0x00B1</mt_code_value>
             <options>4</options>
             <font_position>177</font_position>
+            <variation>mathmode</variation>
           </char>
           <tmpl>
             <selector>tmROOT</selector>
@@ -351,6 +354,7 @@
                 <typeface>3</typeface>
                 <mt_code_value>0x0062</mt_code_value>
                 <options>0</options>
+                <variation>mathmode</variation>
               </char>
               <tmpl>
                 <selector>tmSUP</selector>
@@ -377,6 +381,7 @@
                 <mt_code_value>0x2212</mt_code_value>
                 <options>4</options>
                 <font_position>45</font_position>
+                <variation>mathmode</variation>
               </char>
               <char>
                 <typeface>8</typeface>
@@ -388,11 +393,13 @@
                 <typeface>3</typeface>
                 <mt_code_value>0x0061</mt_code_value>
                 <options>0</options>
+                <variation>mathmode</variation>
               </char>
               <char>
                 <typeface>3</typeface>
                 <mt_code_value>0x0063</mt_code_value>
                 <options>0</options>
+                <variation>mathmode</variation>
               </char>
               <end/>
             </slot>
@@ -417,6 +424,7 @@
             <typeface>3</typeface>
             <mt_code_value>0x0061</mt_code_value>
             <options>0</options>
+            <variation>mathmode</variation>
           </char>
           <end/>
         </slot>

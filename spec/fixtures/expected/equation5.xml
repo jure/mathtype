@@ -323,10 +323,10 @@
         <typeface>3</typeface>
         <mt_code_value>0x0061</mt_code_value>
         <options>0</options>
+        <variation>mathmode</variation>
       </char>
       <tmpl>
         <selector>tmARROW</selector>
-        <variation>tvAR_SINGLE</variation>
         <variation>tvAR_LOS</variation>
         <variation>tvAR_HARPOON</variation>
         <variation>tvAR_TOPBOTTOM</variation>
@@ -338,6 +338,7 @@
             <typeface>3</typeface>
             <mt_code_value>0x0061</mt_code_value>
             <options>0</options>
+            <variation>mathmode</variation>
           </char>
           <end/>
         </slot>
@@ -347,6 +348,7 @@
             <typeface>3</typeface>
             <mt_code_value>0x0062</mt_code_value>
             <options>0</options>
+            <variation>mathmode</variation>
           </char>
           <end/>
         </slot>
@@ -355,11 +357,13 @@
           <typeface>22</typeface>
           <mt_code_value>0x21C0</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <char>
           <typeface>22</typeface>
           <mt_code_value>0x21BD</mt_code_value>
           <options>0</options>
+          <variation>mathmode</variation>
         </char>
         <end/>
       </tmpl>
@@ -367,6 +371,7 @@
         <typeface>3</typeface>
         <mt_code_value>0x0063</mt_code_value>
         <options>0</options>
+        <variation>mathmode</variation>
       </char>
       <end/>
     </slot>
