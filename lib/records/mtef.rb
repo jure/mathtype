@@ -118,6 +118,10 @@ module Mathtype
   end
 
   class Equation < BinData::Record
+    include Snapshot
+    EXPOSED_IN_SNAPSHOT = %i(mtef_version platform product product_version
+      product_subversion application_key equation_options equation)
+
     endian :little
     uint8 :mtef_version
     uint8 :platform
@@ -125,7 +129,11 @@ module Mathtype
     uint8 :product_version
     uint8 :product_subversion
     stringz :application_key
-    uint8 :equation_options
+    uint8 :_equation_options
+
+    def equation_options
+      _equation_options == 1 ? "inline" : "block"
+    end
 
     array :equation, read_until: lambda { element.record_type == 0 } do
       named_record
