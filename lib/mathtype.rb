@@ -11,7 +11,7 @@ module Mathtype
     def initialize(equation)
       ole = Ole::Storage.open(equation, "rb+")
       eq = ole.file.read("Equation Native")[28..-1]
-      raise ::NotImplementedError, "Only MTEF Version 5 currently supported, version is #{eq[0]}" unless eq.bytes.to_a[0]==0x05
+      raise ::NotImplementedError, "Only MTEF Version 5 currently supported, version is #{eq[0].unpack('C')[0].to_i}" unless eq.bytes.to_a[0]==0x05
       data = Mathtype::Equation.read(eq).snapshot
       @builder = Nokogiri::XML::Builder.new do |xml|
         @xml = xml
