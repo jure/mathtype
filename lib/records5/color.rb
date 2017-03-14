@@ -6,7 +6,7 @@
 # equation records (until the next COLOR record) have the color defined by the
 # indicated COLOR_DEF record.
 
-module Mathtype
+module Mathtype5
   class RecordColor < BinData::Record
     int8 :color_def_index
   end

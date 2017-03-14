@@ -23,12 +23,17 @@ require_relative "snapshot"
 # Simple typesizes, without a delta value, are written using the records
 # described in the next section.
 
-module Mathtype
+module Mathtype3
   class RecordSize < BinData::Record
     include Snapshot
-    EXPOSED_IN_SNAPSHOT = %i(lsize dsize point_size)
+    EXPOSED_IN_SNAPSHOT = %i(tag_options lsize dsize point_size)
 
     endian :little
+
+    mandatory_parameter :options
+
+    virtual :_options, :value => lambda{ options }
+
     int8 :_size_select
 
     uint16 :_point_size, onlyif: lambda { _size_select == 101 }
@@ -65,6 +70,10 @@ module Mathtype
 
     def point_size
       -_point_size if _point_size != 0
+    end
+
+    def tag_options
+      _options
     end
   end
 end

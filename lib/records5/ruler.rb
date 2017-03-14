@@ -8,7 +8,7 @@
 # followed by a 16-bit integer offset from the left end of the slot or pile
 # with which it is associated.
 
-module Mathtype
+module Mathtype5
   class RecordRuler < BinData::Record
     endian :little
 

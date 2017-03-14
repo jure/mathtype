@@ -2,7 +2,8 @@ require "mathtype/version"
 require "bindata"
 require "ole/storage"
 require "nokogiri"
-require_relative "records/mtef.rb"
+require_relative "records3/mtef.rb"
+require_relative "records5/mtef.rb"
 
 module Mathtype
   class Converter
@@ -11,8 +12,14 @@ module Mathtype
     def initialize(equation)
       ole = Ole::Storage.open(equation, "rb+")
       eq = ole.file.read("Equation Native")[28..-1]
-      raise ::NotImplementedError, "Only MTEF Version 5 currently supported, version is #{eq[0].unpack('C')[0].to_i}" unless eq.bytes.to_a[0]==0x05
-      data = Mathtype::Equation.read(eq).snapshot
+      @version = eq[0].unpack('C')[0].to_i
+      raise ::NotImplementedError, "Only MTEF Version 3 and 5 currently supported, version is #{version}" unless (version==3 or version==5)
+      case @version
+      when 3
+        data = Mathtype3::Equation.read(eq).snapshot
+      when 5
+        data = Mathtype5::Equation.read(eq).snapshot
+      end
       @builder = Nokogiri::XML::Builder.new do |xml|
         @xml = xml
         xml.root do
@@ -28,6 +35,12 @@ module Mathtype
     def process(element: "mtef", object:)
       if object.is_a? Hash
         name = Mathtype::RECORD_NAMES[object[:record_type]]
+        case @version
+        when 3
+          name = Mathtype3::RECORD_NAMES[object[:record_type]]
+        else
+          name = Mathtype5::RECORD_NAMES[object[:record_type]]
+        end
         if name
           xml.send(name) do
             (object[:payload] || {}).each do |k, v|

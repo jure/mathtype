@@ -6,7 +6,7 @@
 # it means equation content following it will be Full size (szFULL), tag value
 # 11 means szSUB, and so on. See typesize.
 
-module Mathtype
+module Mathtype3
   class RecordFull < BinData::Record
   end
 

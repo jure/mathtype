@@ -6,7 +6,7 @@
 # This record associates an font encoding with a font name. See Definition
 # records.
 
-module Mathtype
+module Mathtype5
   class RecordFontDef < BinData::Record
     uint8 :enc_def_index
     stringz :font_name

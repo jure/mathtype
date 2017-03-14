@@ -18,7 +18,7 @@ require_relative "color"
 require_relative "color_def"
 require_relative "future"
 
-module Mathtype
+module Mathtype5
   RECORD_NAMES = {
     0 => "end",
     1 => "slot",

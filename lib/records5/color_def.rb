@@ -11,7 +11,7 @@
 # absence of the color and 1000 is a fully saturated color. So, an RGB color
 # definition for black has all three components at 0.
 
-module Mathtype
+module Mathtype5
   class RecordColorDef < BinData::Record
     endian :little
 

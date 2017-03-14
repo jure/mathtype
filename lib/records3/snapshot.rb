@@ -1,6 +1,6 @@
 require "bindata"
 
-module Mathtype
+module Mathtype3
   module Snapshot
     def snapshot
       snapshot = BinData::Record::Snapshot.new

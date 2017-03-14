@@ -14,52 +14,26 @@
 
 require_relative "snapshot"
 
-module Mathtype
+module Mathtype3
   class RecordEmbell < BinData::Record; end
   class RecordChar < BinData::Record
     include Snapshot
-    EXPOSED_IN_SNAPSHOT = %i(nudge typeface mt_code_value options font_position
-      variation embellishment_list)
+    EXPOSED_IN_SNAPSHOT = %i(tag_options nudge typeface mt_code_value embellishment_list)
 
     endian :little
-    int8 :options
 
-    nudge :nudge, onlyif: lambda { options & OPTIONS["mtefOPT_NUDGE"] > 0 }
+    mandatory_parameter :options
+
+    virtual :_options, :value => lambda{ options }
+
+    nudge :nudge, onlyif: lambda { options & OPTIONS["xfLMOVE"] > 0 }
 
     int8 :_typeface
 
-    int16 :_mt_code_value, onlyif: (lambda do
-      options & OPTIONS["mtefOPT_CHAR_ENC_NO_MTCODE"] == 0
-    end)
-
-    font_position_choice = lambda do
-      char_enc_char_8 = options & OPTIONS["mtefOPT_CHAR_ENC_CHAR_8"] > 0
-      char_enc_char_16 = options & OPTIONS["mtefOPT_CHAR_ENC_CHAR_16"] > 0
-
-      if char_enc_char_8
-        8
-      elsif char_enc_char_16
-        16
-      end
-    end
-
-    font_position_present = lambda do
-      char_enc_char_8 = options & OPTIONS["mtefOPT_CHAR_ENC_CHAR_8"] > 0
-      char_enc_char_16 = options & OPTIONS["mtefOPT_CHAR_ENC_CHAR_16"] > 0
-
-      return true if char_enc_char_8 || char_enc_char_16
-    end
-
-    choice :font_position,
-        selection: font_position_choice,
-        onlyif: font_position_present do
-
-      uint8 8
-      uint16 16
-    end
+    int16 :_mt_code_value
 
     array :embellishment_list,
-        onlyif: lambda { options & OPTIONS["mtefOPT_CHAR_EMBELL"] > 0 },
+        onlyif: lambda { options & OPTIONS["xfEMBELL"] > 0 },
         read_until: lambda { element.record_type == 0 } do
       named_record
     end
@@ -70,7 +44,6 @@ module Mathtype
       else
         _mt_code_value
       end
-
       sprintf("0x%04X", mt_code)
     end
 
@@ -78,13 +51,8 @@ module Mathtype
       _typeface + 128
     end
 
-    def variation
-      case typeface
-      when 1, 9, 10
-        "textmode"
-      else
-        "mathmode"
-      end
+    def tag_options
+      _options
     end
   end
 end

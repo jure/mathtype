@@ -13,7 +13,7 @@
 # If the array is longer than expected, the extra values must be skipped to stay
 # in sync with the MTEF stream.
 
-module Mathtype
+module Mathtype5
   class Entry < BinData::Record
     bit4 :unit
     array :nibbles, read_until: lambda { element == 0xF } do

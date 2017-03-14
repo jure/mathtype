@@ -21,7 +21,7 @@ require_relative "snapshot"
 # (0 for none, 1 for solid, 2 for dashed, or 3 for dotted). Similarly for the
 # column partition lines.
 
-module Mathtype
+module Mathtype5
   class RecordMatrix < BinData::Record
     include Snapshot
     EXPOSED_IN_SNAPSHOT = %i(options nudge valign h_just v_just rows cols

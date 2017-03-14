@@ -187,7 +187,7 @@ require_relative "snapshot"
 # 0x0008  tvBX_TOP  top side is present
 # 0x0010  tvBX_BOTTOM bottom side is present
 
-module Mathtype
+module Mathtype5
   class RecordTmpl < BinData::Record
     include Snapshot
     EXPOSED_IN_SNAPSHOT = %i(selector variation template_specific_options nudge

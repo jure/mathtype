@@ -12,7 +12,7 @@ require_relative "snapshot"
 # [[RULER record]] if mtefOPT_LP_RULER is set
 # [object list] list of lines contained by the pile
 
-module Mathtype
+module Mathtype5
   class RecordPile < BinData::Record
     include Snapshot
     EXPOSED_IN_SNAPSHOT = %i(options halign valign object_list)

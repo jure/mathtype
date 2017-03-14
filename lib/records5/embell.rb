@@ -46,7 +46,7 @@ require_relative "snapshot"
 # 36  embU_R1ARROW  under right arrow (1 barb)
 # 37  embU_L1ARROW  under left arrow (1 barb)
 
-module Mathtype
+module Mathtype5
   class RecordEmbell < BinData::Record
     include Snapshot
     EXPOSED_IN_SNAPSHOT = %i(options nudge embell)

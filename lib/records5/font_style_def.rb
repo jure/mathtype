@@ -5,7 +5,7 @@
 # [char_style] character style bits
 # This record associates a character style with a font. See Definition records.
 
-module Mathtype
+module Mathtype5
   class RecordFontStyleDef < BinData::Record
     uint8 :font_def_index
 

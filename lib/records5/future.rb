@@ -6,7 +6,7 @@
 # might be handy if all records had such a length value, it will only be present
 # on future expansion records (i.e. those with record types >= 100).
 
-module Mathtype
+module Mathtype5
   class RecordFuture < BinData::Record
     uint8 :skip
     skip length: :skip

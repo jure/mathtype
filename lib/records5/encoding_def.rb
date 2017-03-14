@@ -15,7 +15,7 @@
 # to have an index of 5. See Extending MathType's Font and Character Information
 # and MathType's Character Encodings for more information on font encodings.
 
-module Mathtype
+module Mathtype5
   class RecordEncodingDef < BinData::Record
     stringz :name
   end
