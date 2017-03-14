@@ -9,6 +9,7 @@ module Mathtype
   class Converter
     attr_reader :xml
     attr_reader :builder
+    attr_reader :version
     def initialize(equation)
       ole = Ole::Storage.open(equation, "rb+")
       eq = ole.file.read("Equation Native")[28..-1]
@@ -34,7 +35,6 @@ module Mathtype
 
     def process(element: "mtef", object:)
       if object.is_a? Hash
-        name = Mathtype::RECORD_NAMES[object[:record_type]]
         case @version
         when 3
           name = Mathtype3::RECORD_NAMES[object[:record_type]]

@@ -18,22 +18,22 @@ module Mathtype3
   class RecordEmbell < BinData::Record; end
   class RecordChar < BinData::Record
     include Snapshot
-    EXPOSED_IN_SNAPSHOT = %i(tag_options nudge typeface mt_code_value embellishment_list)
+    EXPOSED_IN_SNAPSHOT = %i(options nudge typeface mt_code_value embellishment_list)
 
     endian :little
 
-    mandatory_parameter :options
+    mandatory_parameter :_options
 
-    virtual :_options, :value => lambda{ options }
+    virtual :_tag_options, :value => lambda{ _options }
 
-    nudge :nudge, onlyif: lambda { options & OPTIONS["xfLMOVE"] > 0 }
+    nudge :nudge, onlyif: lambda { _options & OPTIONS["xfLMOVE"] > 0 }
 
     int8 :_typeface
 
     int16 :_mt_code_value
 
     array :embellishment_list,
-        onlyif: lambda { options & OPTIONS["xfEMBELL"] > 0 },
+        onlyif: lambda { _options & OPTIONS["xfEMBELL"] > 0 },
         read_until: lambda { element.record_type == 0 } do
       named_record
     end
@@ -51,8 +51,8 @@ module Mathtype3
       _typeface + 128
     end
 
-    def tag_options
-      _options
+    def options
+      _tag_options
     end
   end
 end

@@ -24,14 +24,15 @@ require_relative "snapshot"
 module Mathtype3
   class RecordMatrix < BinData::Record
     include Snapshot
-    EXPOSED_IN_SNAPSHOT = %i(tag_options nudge valign h_just v_just rows cols
+    EXPOSED_IN_SNAPSHOT = %i(options nudge valign h_just v_just rows cols
       row_parts col_parts object_list)
 
-    nudge :nudge, onlyif: lambda { options & OPTIONS["mtefOPT_NUDGE"] > 0 }
 
-    mandatory_parameter :options
+    mandatory_parameter :_options
 
-    virtual :_options, :value => lambda{ options }
+    virtual :_tag_options, :value => lambda{ _options }
+
+    nudge :nudge, onlyif: lambda { _options & OPTIONS["mtefOPT_NUDGE"] > 0 }
 
     int8 :_valign
     int8 :_h_just
@@ -63,8 +64,8 @@ module Mathtype3
       VALIGN[_v_just]
     end
 
-    def tag_options
-      _options
+    def options
+      _tag_options
     end
   end
 end

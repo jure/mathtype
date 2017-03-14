@@ -60,30 +60,33 @@ module Mathtype3
     4 => "axis" # math axis (center of +,-, brace points, etc.)
   }
 
+  class Payload < BinData::Choice
+    opt = {:_options => :options}
+    record_end 0 # end is a reserved keyword
+    record_line 1, opt
+    record_char 2, opt
+    record_tmpl 3, opt
+    record_pile 4, opt
+    record_matrix 5, opt
+    record_embell 6, opt
+    record_ruler 7, opt
+    record_font 8, opt
+    record_size 9, opt
+    record_full 10, opt
+    record_sub 11, opt
+    record_sub2 12, opt
+    record_sym 13, opt
+    record_subsym 14, opt
+  end
+
   ## Payload is the most important class to understand.
   ## This abstraction allows recursive formats.
   ## eg. lists can contain lists can contain lists.
 
   class NamedRecord < BinData::Record
-    bit4 :_options
+    bit4 :record_options
     bit4 :record_type
-    choice :payload, :onlyif => :not_end_tag?, :selection => :record_type do
-      record_end 0, {:options => :_options} # end is a reserved keyword
-      record_line 1, {:options => :_options}
-      record_char 2, {:options => :_options}
-      record_tmpl 3, {:options => :_options}
-      record_pile 4, {:options => :_options}
-      record_matrix 5, {:options => :_options}
-      record_embell 6, {:options => :_options}
-      record_ruler 7, {:options => :_options}
-      record_font 8, {:options => :_options}
-      record_size 9, {:options => :_options}
-      record_full 10, {:options => :_options}
-      record_sub 11, {:options => :_options}
-      record_sub2 12, {:options => :_options}
-      record_sym 13, {:options => :_options}
-      record_subsym 14, {:options => :_options}
-    end
+    payload :payload, :onlyif => :not_end_tag?, :selection => :record_type, :options => :record_options
 
     def not_end_tag?
       record_type != 0

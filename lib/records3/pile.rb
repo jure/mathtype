@@ -15,18 +15,18 @@ require_relative "snapshot"
 module Mathtype3
   class RecordPile < BinData::Record
     include Snapshot
-    EXPOSED_IN_SNAPSHOT = %i(tag_options halign valign object_list)
+    EXPOSED_IN_SNAPSHOT = %i(options halign valign object_list)
 
     nudge :nudge, onlyif: lambda { options & OPTIONS["xfLMOVE"] > 0 }
 
-    mandatory_parameter :options
+    mandatory_parameter :_options
 
-    virtual :_options, :value => lambda{ options }
+    virtual :_tag_options, :value => lambda{ _options }
 
     int8 :_halign
     int8 :_valign
 
-    record_ruler :ruler, onlyif: lambda { options & OPTIONS["xfRULER"] > 0 }
+    record_ruler :ruler, onlyif: lambda { _options & OPTIONS["xfRULER"] > 0 }
 
     array :object_list, read_until: lambda { element.record_type == 0 } do
       named_record
@@ -40,8 +40,8 @@ module Mathtype3
       VALIGN[_valign]
     end
 
-    def tag_options
-      _options
+    def options
+      _tag_options
     end
   end
 end

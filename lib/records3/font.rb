@@ -3,13 +3,13 @@ require_relative "snapshot"
 module Mathtype3
   class RecordFont < BinData::Record
     include Snapshot
-    EXPOSED_IN_SNAPSHOT = %i(tag_options name typeface style)
+    EXPOSED_IN_SNAPSHOT = %i(options name typeface style)
 
     endian :little
 
-    mandatory_parameter :options
+    mandatory_parameter :_options
 
-    virtual :_options, :value => lambda{ options }
+    virtual :_tag_options, :value => lambda{ _options }
 
     int8 :_typeface
 
@@ -20,8 +20,8 @@ module Mathtype3
       _typeface + 128
     end
 
-    def tag_options
-      _options
+    def options
+      _tag_options
     end
   end
 end

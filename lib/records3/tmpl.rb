@@ -190,7 +190,7 @@ require_relative "snapshot"
 module Mathtype3
   class RecordTmpl < BinData::Record
     include Snapshot
-    EXPOSED_IN_SNAPSHOT = %i(tag_options selector variation template_specific_options nudge
+    EXPOSED_IN_SNAPSHOT = %i(options selector variation template_specific_options nudge
       subobject_list)
 
     SCRIPT_SELECTOR = {
@@ -715,11 +715,11 @@ module Mathtype3
     # Second-level keys are bits for certain variations, negative keys mean
     # that the variation is present if the bit is absent.
 
-    mandatory_parameter :options
+    mandatory_parameter :_options
 
-    virtual :_options, :value => lambda{ options }
+    virtual :_tag_options, :value => lambda{ _options }
 
-    nudge :nudge, onlyif: lambda { options & OPTIONS["xfLMOVE"] > 0 }
+    nudge :nudge, onlyif: lambda { _options & OPTIONS["xfLMOVE"] > 0 }
 
     int8 :_selector
 
@@ -745,8 +745,8 @@ module Mathtype3
   	 def variation
       VARIATIONS[_selector][_variation]
     end
-    def tag_options
-      _options
+    def options
+      _tag_options
     end
   end
 end

@@ -49,7 +49,7 @@ require_relative "snapshot"
 module Mathtype3
   class RecordEmbell < BinData::Record
     include Snapshot
-    EXPOSED_IN_SNAPSHOT = %i(tag_options nudge embell)
+    EXPOSED_IN_SNAPSHOT = %i(options nudge embell)
 
     EMBELL = {
       2 => "emb1DOT", # over single dot
@@ -89,12 +89,12 @@ module Mathtype3
       36 => "embU_R1ARROW", #  under right arrow (1 barb)
       37 => "embU_L1ARROW", #  under left arrow (1 barb)
     }
+    mandatory_parameter :_options
 
-    nudge :nudge, onlyif: lambda { options & OPTIONS["xfLMOVE"] > 0 }
+    virtual :_tag_options, :value => lambda{ _options }
 
-    mandatory_parameter :options
+    nudge :nudge, onlyif: lambda { _options & OPTIONS["xfLMOVE"] > 0 }
 
-    virtual :_options, :value => lambda{ options }
 
     int8 :_embell
 
@@ -102,8 +102,8 @@ module Mathtype3
       EMBELL[_embell]
     end
 
-    def tag_options
-      _options
+    def options
+      _tag_options
     end
   end
 end

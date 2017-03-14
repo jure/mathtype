@@ -26,13 +26,13 @@ require_relative "snapshot"
 module Mathtype3
   class RecordSize < BinData::Record
     include Snapshot
-    EXPOSED_IN_SNAPSHOT = %i(tag_options lsize dsize point_size)
+    EXPOSED_IN_SNAPSHOT = %i(options lsize dsize point_size)
 
     endian :little
 
-    mandatory_parameter :options
+    mandatory_parameter :_options
 
-    virtual :_options, :value => lambda{ options }
+    virtual :_tag_options, :value => lambda{ _options }
 
     int8 :_size_select
 
@@ -72,8 +72,8 @@ module Mathtype3
       -_point_size if _point_size != 0
     end
 
-    def tag_options
-      _options
+    def options
+      _tag_options
     end
   end
 end
