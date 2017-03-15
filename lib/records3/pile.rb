@@ -17,11 +17,11 @@ module Mathtype3
     include Snapshot
     EXPOSED_IN_SNAPSHOT = %i(options halign valign object_list)
 
-    nudge :nudge, onlyif: lambda { options & OPTIONS["xfLMOVE"] > 0 }
-
     mandatory_parameter :_options
 
-    virtual :_tag_options, :value => lambda{ _options }
+    virtual :options, :value => lambda{ _options }
+
+    nudge :nudge, onlyif: lambda { _options & OPTIONS["xfLMOVE"] > 0 }
 
     int8 :_halign
     int8 :_valign
@@ -38,10 +38,6 @@ module Mathtype3
 
     def valign
       VALIGN[_valign]
-    end
-
-    def options
-      _tag_options
     end
   end
 end
