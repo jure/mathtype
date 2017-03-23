@@ -132,7 +132,7 @@ module Mathtype5
     uint8 :_equation_options
 
     def equation_options
-      _equation_options == 1 ? "inline" : "block"
+      _equation_options
     end
 
     array :equation, read_until: lambda { element.record_type == 0 } do
