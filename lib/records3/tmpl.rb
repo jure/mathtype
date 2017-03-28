@@ -717,7 +717,7 @@ module Mathtype3
 
     mandatory_parameter :_options
 
-    virtual :_tag_options, :value => lambda{ _options }
+    virtual :options, :value => lambda{ _options }
 
     nudge :nudge, onlyif: lambda { _options & OPTIONS["xfLMOVE"] > 0 }
 
@@ -744,9 +744,6 @@ module Mathtype3
     end
   	 def variation
       VARIATIONS[_selector][_variation]
-    end
-    def options
-      _tag_options
     end
   end
 end
