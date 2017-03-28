@@ -50,7 +50,7 @@ module Mathtype3
       bit nbits: 2
     end
 
-    bit :_realign_rows, nbits: lambda { realign(cols) }
+    bit :_realign_cols, nbits: lambda { realign(cols) }
 
     array :object_list, read_until: lambda { element.record_type == 0 } do
       named_record
