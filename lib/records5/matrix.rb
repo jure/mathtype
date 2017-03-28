@@ -36,9 +36,13 @@ module Mathtype5
     int8 :rows
     int8 :cols
 
+    bit :_realign_rows, nbits: lambda { realign(rows) }
+
     array :row_parts, initial_length: lambda { rows + 1 } do
       bit nbits: 2
     end
+
+    bit :_realign_cols, nbits: lambda { realign(cols) }
 
     array :col_parts, initial_length: lambda { cols + 1 } do
       bit nbits: 2
@@ -58,6 +62,10 @@ module Mathtype5
 
     def v_just
       VALIGN[_v_just]
+    end
+    def realign (nparts)
+      offset = (((nparts +  1) * 2) % 8)
+      return offset == 0 ? 0 : (8 - offset)
     end
   end
 end

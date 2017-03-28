@@ -44,9 +44,13 @@ module Mathtype3
       bit nbits: 2
     end
 
+    bit :_realign_rows, nbits: lambda { realign(rows) }
+
     array :col_parts, initial_length: lambda { cols + 1 } do
       bit nbits: 2
     end
+
+    bit :_realign_rows, nbits: lambda { realign(cols) }
 
     array :object_list, read_until: lambda { element.record_type == 0 } do
       named_record
@@ -66,6 +70,11 @@ module Mathtype3
 
     def options
       _tag_options
+    end
+
+    def realign (nparts)
+      offset = (((nparts +  1) * 2) % 8)
+      return offset == 0 ? 0 : (8 - offset)
     end
   end
 end
