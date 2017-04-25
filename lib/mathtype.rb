@@ -2,8 +2,10 @@ require "mathtype/version"
 require "bindata"
 require "ole/storage"
 require "nokogiri"
+require_relative "records/bintypes.rb"
 require_relative "records3/mtef.rb"
 require_relative "records5/mtef.rb"
+
 
 module Mathtype
   class Converter
