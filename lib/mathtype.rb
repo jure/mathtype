@@ -15,6 +15,7 @@ module Mathtype
     def initialize(equation)
       ole = Ole::Storage.open(equation, "rb+")
       eq = ole.file.read("Equation Native")[28..-1]
+      ole.close
       @version = eq[0].unpack('C')[0].to_i
       raise ::NotImplementedError, "Only MTEF Version 3 and 5 currently supported, version is #{version}" unless (version==3 or version==5)
       case @version
