@@ -9,6 +9,7 @@ module Mathtype
     def read_from_file(path)
       f = File.open(path, "rb")
       @raw = f.read
+      f.close
     end
   end
 end
