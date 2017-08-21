@@ -1,6 +1,4 @@
 require "mathtype/version"
-require "bindata"
-require "ole/storage"
 require "nokogiri"
 require_relative "file_parser/parser.rb"
 require_relative "records3/mtef.rb"
@@ -14,9 +12,8 @@ module Mathtype
     attr_reader :version
     def initialize(equation)
       set_parser(equation)
-      raise ::NotImplementedError, "Only .wmf and .bin (OLE.-Object) currently supported, name supplied: #{equation}"
-      unless eq
-      @version = eq[0].unpack('C')[0].to_i
+      raise ::NotImplementedError, "Only .wmf and .bin (OLE.-Object) currently supported, name supplied: #{equation}" unless @parser.equation
+      @version = @parser.equation[0].unpack('C')[0].to_i
       raise ::NotImplementedError, "Only MTEF Version 3 and 5 currently supported, version is #{version}" unless (version==3 or version==5)
       case @version
       when 3
@@ -32,11 +29,11 @@ module Mathtype
       end
     end
 
-    def set_parser
-      if equation.end_with?(".ole")
-        @parser = FileParser Mathtype.FileParser::OleFileParser.new equation
+    def set_parser(equation)
+      if equation.end_with?(".bin")
+        @parser = Mathtype::OleFileParser.new equation
       else equation.end_with?(".wmf")
-        @parser = FileParser Mathtype.FileParser::WmfFileParser.new equation
+        @parser = Mathtype::WmfFileParser.new equation
       end
     end
 
