@@ -7,7 +7,7 @@
     <product_version>6</product_version>
     <product_subversion>7</product_subversion>
     <application_key>DSMT6</application_key>
-    <equation_options>0</equation_options>
+    <equation_options>block</equation_options>
     <future>
       <skip>3</skip>
     </future>

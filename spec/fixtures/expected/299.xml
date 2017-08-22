@@ -7,7 +7,7 @@
     <product_version>6</product_version>
     <product_subversion>9</product_subversion>
     <application_key>DSMT6</application_key>
-    <equation_options>0</equation_options>
+    <equation_options>block</equation_options>
     <encoding_def>
       <name>WinAllBasicCodePages</name>
     </encoding_def>
