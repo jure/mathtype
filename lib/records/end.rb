@@ -1,4 +1,4 @@
-module Mathtype3
+module Mathtype
   class RecordEnd < BinData::Primitive
     def get; ""; end
     def set(v); end

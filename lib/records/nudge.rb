@@ -11,8 +11,8 @@
 
 require_relative "snapshot"
 
-module Mathtype5
-  class Nudge < BinData::Record
+module Mathtype
+  class RecordNudge < BinData::Record
     include Snapshot
     EXPOSED_IN_SNAPSHOT = %i(dx dy)
 
