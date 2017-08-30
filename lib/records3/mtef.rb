@@ -1,17 +1,25 @@
-require_relative "ruler"
 require_relative "line"
 require_relative "embell"
 require_relative "char"
 require_relative "pile"
 require_relative "tmpl"
 require_relative "font"
-require_relative "typesizes"
 require_relative "matrix"
 require_relative "size"
 
 module Mathtype3
   class RecordEnd < Mathtype::RecordEnd; end
   class RecordNudge < Mathtype::RecordNudge; end
+  class RecordRuler < Mathtype::RecordRuler; end
+  class RecordNudge < Mathtype::RecordNudge; end
+  class RecordFull < Mathtype::RecordFull; end
+  class RecordSub < Mathtype::RecordSub; end
+  class RecordSub2 < Mathtype::RecordSub2; end
+  class RecordSym < Mathtype::RecordSym; end
+  class RecordSubsym < Mathtype::RecordSubsym; end
+
+  HALIGN = Mathtype::HALIGN
+  VALIGN = Mathtype::VALIGN
 
   RECORD_NAMES = {
     0 => "end",

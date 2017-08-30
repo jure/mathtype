@@ -2,6 +2,8 @@ require_relative 'snapshot'
 require_relative 'bintypes'
 require_relative 'end'
 require_relative 'nudge'
+require_relative 'ruler'
+require_relative 'typesizes'
 
 module Mathtype
 
@@ -28,6 +30,7 @@ module Mathtype
     uint8 :product
     uint8 :product_version
     uint8 :product_subversion
+    include Snapshot
   end
 
 end

@@ -1,4 +1,3 @@
-require_relative "ruler"
 require_relative "line"
 require_relative "embell"
 require_relative "char"
@@ -6,7 +5,6 @@ require_relative "pile"
 require_relative "tmpl"
 require_relative "eqn_prefs"
 require_relative "font_def"
-require_relative "typesizes"
 require_relative "font_style_def"
 require_relative "matrix"
 require_relative "encoding_def"
@@ -19,6 +17,16 @@ require_relative "future"
 module Mathtype5
   class RecordEnd < Mathtype::RecordEnd; end
   class RecordNudge < Mathtype::RecordNudge; end
+  class RecordRuler < Mathtype::RecordRuler; end
+  class RecordNudge < Mathtype::RecordNudge; end
+  class RecordFull < Mathtype::RecordFull; end
+  class RecordSub < Mathtype::RecordSub; end
+  class RecordSub2 < Mathtype::RecordSub2; end
+  class RecordSym < Mathtype::RecordSym; end
+  class RecordSubsym < Mathtype::RecordSubsym; end
+
+  HALIGN = Mathtype::HALIGN
+  VALIGN = Mathtype::VALIGN
 
   RECORD_NAMES = {
     0 => "end",
@@ -96,7 +104,6 @@ module Mathtype5
 
   class NamedRecord < BinData::Record
     int8 :record_type
-    int8 :record_options
     payload :payload, :onlyif => :not_end_tag?, :selection => :record_type, :options => :record_options
 
     def not_end_tag?

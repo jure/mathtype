@@ -6,19 +6,14 @@
 # it means equation content following it will be Full size (szFULL), tag value
 # 11 means szSUB, and so on. See typesize.
 
-module Mathtype3
-  class RecordFull < BinData::Record
-  end
+module Mathtype
+  class RecordFull < BinData::Record; end
 
-  class RecordSub < BinData::Record
-  end
+  class RecordSub < BinData::Record; end
 
-  class RecordSub2 < BinData::Record
-  end
+  class RecordSub2 < BinData::Record; end
 
-  class RecordSym < BinData::Record
-  end
+  class RecordSym < BinData::Record; end
 
-  class RecordSubsym < BinData::Record
-  end
+  class RecordSubsym < BinData::Record; end
 end
