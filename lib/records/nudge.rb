@@ -12,7 +12,7 @@
 require_relative "snapshot"
 
 module Mathtype
-  class Nudge < BinData::Record
+  class RecordNudge < BinData::Record
     include Snapshot
     EXPOSED_IN_SNAPSHOT = %i(dx dy)
 
@@ -20,15 +20,19 @@ module Mathtype
 
     int8 :_small_dx
     int8 :_small_dy
-    int16 :_large_dx, :onlyif => lambda { _small_dx == 128 }
-    int16 :_large_dy, :onlyif => lambda { _small_dy == 128 }
+    mtef16 :_large_dx, :onlyif => lambda { has_large_offset }
+    mtef16 :_large_dy, :onlyif => lambda { has_large_offset }
 
     def dx
-      _small_dx == 128 ? _large_dx : (_small_dx - 128)
+      has_large_offset ? _large_dx : (_small_dx - 128)
     end
 
     def dy
-      _small_dy == 128 ? _large_dy : (_small_dy - 128)
+      has_large_offset ? _large_dy : (_small_dy - 128)
+    end
+
+    def has_large_offset
+      _small_dx == -128 and _small_dy == -128
     end
   end
 end

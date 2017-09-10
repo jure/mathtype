@@ -11,4 +11,7 @@
 *.so
 *.o
 *.a
+*.gem
 mkmf.log
+*~
+#*#

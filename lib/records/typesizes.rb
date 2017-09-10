@@ -7,18 +7,13 @@
 # 11 means szSUB, and so on. See typesize.
 
 module Mathtype
-  class RecordFull < BinData::Record
-  end
+  class RecordFull < BinData::Record; end
 
-  class RecordSub < BinData::Record
-  end
+  class RecordSub < BinData::Record; end
 
-  class RecordSub2 < BinData::Record
-  end
+  class RecordSub2 < BinData::Record; end
 
-  class RecordSym < BinData::Record
-  end
+  class RecordSym < BinData::Record; end
 
-  class RecordSubsym < BinData::Record
-  end
+  class RecordSubsym < BinData::Record; end
 end
