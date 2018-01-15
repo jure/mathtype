@@ -77,35 +77,127 @@ module Mathtype
       "8" => 60,
       "9" => 61,
       "+" => 62,
-      "-" => 63
+      "-" => 63,
+      0 => "a",
+      1 => "b",
+      2 => "c",
+      3 => "d",
+      4 => "e",
+      5 => "f",
+      6 => "g",
+      7 => "h",
+      8 => "i",
+      9 => "j",
+      10 => "k",
+      11 => "l",
+      12 => "m",
+      13 => "n",
+      14 => "o",
+      15 => "p",
+      16 => "q",
+      17 => "r",
+      18 => "s",
+      19 => "t",
+      20 => "u",
+      21 => "v",
+      22 => "w",
+      23 => "x",
+      24 => "y",
+      25 => "z",
+      26 => "A",
+      27 => "B",
+      28 => "C",
+      29 => "D",
+      30 => "E",
+      31 => "F",
+      32 => "G",
+      33 => "H",
+      34 => "I",
+      35 => "J",
+      36 => "K",
+      37 => "L",
+      38 => "M",
+      39 => "N",
+      40 => "O",
+      41 => "P",
+      42 => "Q",
+      43 => "R",
+      44 => "S",
+      45 => "T",
+      46 => "U",
+      47 => "V",
+      48 => "W",
+      49 => "X",
+      50 => "Y",
+      51 => "Z",
+      52 => "0",
+      53 => "1",
+      54 => "2",
+      55 => "3",
+      56 => "4",
+      57 => "5",
+      58 => "6",
+      59 => "7",
+      60 => "8",
+      61 => "9",
+      62 => "+",
+      63 => "-"
     }
 
     def decode(string64)
       #decode from base64 mtef to binary mtef
       l = string64.length
-      char = 0
-      output = 0
-      while char < l
-        output += A64[string64[char].chr]
-        output << 6
-        print string64[char].chr
-        if char % 4 == 3
-          printf( ":%08d\n", output.to_s( 2))
-          output = 0
+      i = b0 = b1 = carry = 0
+      out = []
+      while i < l
+        chr  = A64[string64[i]]
+        case i % 4
+        when 0
+          b0  = chr
+          b1 = 0
+        when 1
+          b0 += ((chr & 3) << 6)
+          b1    = ((chr & 0xfc) >> 2)
+          out   << b0
+        when 2
+          b0  = ((chr & 0x30) >> 4)
+          b1   += ((chr & 0xf) << 4)
+        when 3
+          b0 += chr << 2
+          out << b1 << b0
+          b0=b1=0
         end
-        char += 1
+        i += 1
       end
-      printf ":%08d\n", output.to_s(2)
-      return output
+      return out.pack("C*")
     end
 
-    def encode(equation)
-      # TODO: encode binary mtef to base64 mtef + checksum
+    def encode(mtef)
+      #encode from binary mtef to base64 mtef
+      out = ""
+      bytes = mtef.bytes
+      i = shft = 0
+      l = bytes.length
+      carry = 0
+      while i < l
+        chr = bytes[i] << shft
+        chr = chr | carry
+        out << A64[chr & 0x3f]
+        carry = chr >> 6
+        i += 1
+        shft = (i % 3) * 2
+        if shft == 0
+          out << A64[carry]
+          carry = 0
+        end
+      end
+      return out
     end
   end
 end
 
-require_relative "wmf.rb"
+
 require_relative "ole.rb"
+require_relative "wmf.rb"
 require_relative "eps.rb"
 

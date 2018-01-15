@@ -10,7 +10,6 @@ module Mathtype
       string64 = string64.gsub /.*MathType!MTEF!1!1!\+-(.*![0-9A-F]{4}!).*/, '\\1'
       checksum = string64[-5 .. -2]
       string64 = string64[ 0 .. -7]
-
       @equation = decode string64
     end
   end
