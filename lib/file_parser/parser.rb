@@ -6,6 +6,10 @@ module Mathtype
       read_from_file(path)
     end
 
+    def checksum
+      @equation.bytes.reduce(:+).to_s(16).upcase
+    end
+
     def read_from_file(path)
       f = File.open(path, "rb")
       @raw = f.read

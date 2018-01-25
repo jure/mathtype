@@ -34,8 +34,10 @@ module Mathtype
     def set_parser(equation)
       if equation.end_with?(".bin")
         @parser = Mathtype::OleFileParser.new equation
-      else equation.end_with?(".wmf")
+      elsif equation.end_with?(".wmf")
         @parser = Mathtype::WmfFileParser.new equation
+      else
+        @parser = Mathtype::EpsFileParser.new equation
       end
     end
 
