@@ -31,6 +31,10 @@ puts xml.to_xml # to get the string XML representation
 
 Run `bundle exec rspec` to run specs.
 
+# Maintainers
+- Sebastian Bulka ([sbulka](https://github.com/sbulka))
+- Jure Triglav ([jure](https://github.com/jure))
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/mathtype/fork )
