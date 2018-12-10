@@ -318,12 +318,12 @@ module Mathtype5
         0x0010 => {
           0x0001 => "tvAR_LOS", # if double, large over small,
           0x0002 => "tvAR_LOS", # if harpoon, large over small,
-          0x0000 => "tvAR_LEFT" # if single, arrow points left
+          0x0010 => "tvAR_LEFT" # if single, arrow points left
         },
         0x0020 => {
           0x0001 => "tvAR_SOL", # if double, small over large
           0x0002 => "tvAR_SOL", # if harpoon, small over large
-          0x0000 => "tvAR_RIGHT", # if single, arrow points right
+          0x0010 => "tvAR_RIGHT", # if single, arrow points right
         },
         0x0002 => "tvAR_HARPOON", # harpoon
         0x0004 => { # top slot is present
@@ -488,7 +488,7 @@ module Mathtype5
 
 
     def mode
-      DIGIT_MODE_VARIATIONS.include?(selector) ? :digit : :bitmask
+      DIGIT_MODE_VARIATIONS.include?(_selector) ? :digit : :bitmask
     end
 
     def selector
