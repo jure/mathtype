@@ -342,7 +342,8 @@
       </char>
       <tmpl>
         <selector>tmARROW</selector>
-        <variation></variation>
+        <variation>tvAR_LEFT</variation>
+        <variation>tvAR_RIGHT</variation>
         <variation>tvAR_TOP</variation>
         <template_specific_options>0</template_specific_options>
         <sub/>
