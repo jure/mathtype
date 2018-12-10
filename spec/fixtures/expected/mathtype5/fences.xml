@@ -813,7 +813,6 @@
         </char>
         <tmpl>
           <selector>tmINTERVAL</selector>
-          <variation>tvINTV_LBLB</variation>
           <variation>tvINTV_RBRB</variation>
           <template_specific_options>0</template_specific_options>
           <slot>
@@ -853,7 +852,6 @@
         <options>0</options>
         <tmpl>
           <selector>tmINTERVAL</selector>
-          <variation>tvINTV_LBLB</variation>
           <variation>tvINTV_RBLB</variation>
           <template_specific_options>0</template_specific_options>
           <slot>
