@@ -3,22 +3,26 @@ language: ruby
 matrix:
   include:
   - rvm: 2.1
-    gemfile: mathtype.ruby-2-2.gemspec
+    before_script: mv gemspecs/mathtype.ruby-2-2.gemspec mathtype.gemspec
   - rvm: 2.2
-    gemfile: mathtype.ruby-2-2.gemspec
+    before_script: mv gemspecs/mathtype.ruby-2-2.gemspec mathtype.gemspec
   - rvm: 2.3
     before_install:
     - gem update --system
     - gem install bundler
+    before_script: mv gemspecs/mathtype.ruby-2-6.gemspec mathtype.gemspec
   - rvm: 2.4
     before_install:
     - gem update --system
     - gem install bundler
+    before_script: mv gemspecs/mathtype.ruby-2-6.gemspec mathtype.gemspec
   - rvm: 2.5
     before_install:
     - gem update --system
     - gem install bundler
+    before_script: mv gemspecs/mathtype.ruby-2-6.gemspec mathtype.gemspec
   - rvm: 2.6
     before_install:
     - gem update --system
     - gem install bundler
+    before_script: mv gemspecs/mathtype.ruby-2-6.gemspec mathtype.gemspec
