@@ -6,8 +6,8 @@ require 'mathtype/version'
 Gem::Specification.new do |spec|
   spec.name          = "mathtype"
   spec.version       = Mathtype::VERSION
-  spec.authors       = ["Jure Triglav"]
-  spec.email         = ["juretriglav@gmail.com"]
+  spec.authors       = ["Jure Triglav", "Sebastian Bulka"]
+  spec.email         = ["juretriglav@gmail.com", "sebastian.bulka@le-tex.de"]
   spec.summary       = %q{ A Ruby gem for reading MathType binaries and converting them to an XML form. }
   spec.description   = %q{ This gem can read proprietary MathType binary equations that are usually embedded in Word documents and convert these equations into an XML form. This XML form can then be used for further processing, e.g. to convert the equation to MathML.}
   spec.homepage      = ""
