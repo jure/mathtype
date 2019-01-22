@@ -173,6 +173,7 @@ module Mathtype
         end
         i += 1
       end
+      out << b0 if i % 2 == 1
       return out.pack("C*")
     end
 
