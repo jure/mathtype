@@ -3,7 +3,7 @@ require "spec_helper"
 require "pry"
 RSpec.describe Mathtype do
   Dir.glob("spec/fixtures/input/mathtype*") do |dir|
-    Dir.glob("#{dir}/*.bin") do |equation|
+    Dir.glob("#{dir}/*.{bin,wmf,eps}") do |equation|
       it "converted #{equation} matches expected output" do
         xml = Mathtype::Converter.new(equation).to_xml
         expected_xml = "#{File.basename(equation, ".*")}.xml"
