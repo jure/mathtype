@@ -9,11 +9,17 @@ module Mathtype
       string64 = @raw.gsub /\r/, ""
       # d for delimiter
       d = string64[(/MathType(.)MTEF\1/ =~ string64) + 8]
-      matches = string64.match /.*MathType#{d}MTEF#{d}(.)#{d}(.)#{d}.{2}(.*)#{d}([0-9A-F]{4})#{d}.*/m
+      matches = string64.match /.*MathType#{d}MTEF#{d}(.)#{d}(.)#{d}(.)(.)(.*)#{d}([0-9A-F]{4})#{d}.*/m
       leading_chrs = matches[1].to_i
       trailing_chrs = matches[2].to_i - 1
-      string64   = matches[3]
-      mtchecksum = matches[4]
+      a64_chr1 = matches[3]
+      a64_chr2 = matches[4]
+      A64[a64_chr1] = 62
+      A64[a64_chr2] = 63
+      A64[62] = a64_chr1
+      A64[63] = a64_chr2
+      string64   = matches[5]
+      mtchecksum = matches[6]
       string64.gsub! /.{#{trailing_chrs}}(\n).{#{leading_chrs}}/m, ""
       @equation = decode string64
       unless checksum == mtchecksum
