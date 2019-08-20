@@ -320,12 +320,12 @@
         <v_just>center_baseline</v_just>
         <rows>3</rows>
         <cols>1</cols>
-        <row_parts>0</row_parts>
         <row_parts>1</row_parts>
         <row_parts>3</row_parts>
         <row_parts>1</row_parts>
-        <col_parts>2</col_parts>
+        <row_parts>0</row_parts>
         <col_parts>1</col_parts>
+        <col_parts>2</col_parts>
         <slot>
           <options>0</options>
           <char>
