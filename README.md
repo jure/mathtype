@@ -1,4 +1,4 @@
-# Mathtype
+# What does the `mathtype` gem do?
 
 This gem can read proprietary MathType binary equations that are usually embedded in Word documents and convert these equations into an XML form. This XML form can then be used for further processing, e.g. to convert the equation to MathML.
 
@@ -36,8 +36,7 @@ Run `bundle exec rspec` to run specs.
 - Jure Triglav ([jure](https://github.com/jure))
 
 ## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/mathtype/fork )
+1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
